@@ -1,0 +1,53 @@
+.skills-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.skills-header {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #C5AECF;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+.skills-categories {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns */
+}
+.skill-category {
+  display: flex;
+  flex-direction: column;
+}
+.skill-category h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  gap: -10px; /* Control vertical spacing between Languages and Tools */
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left; 
+  gap: 15px; /* Space between skill name and stars */
+  font-family: 'Nunito', sans-serif;
+  margin-bottom: 10px; 
+}
+
+.stars {
+  display: flex;
+  gap: 2px; /* Space between stars */
+}
+
+.star {
+  color: #ccc; /* Default non-colored star */
+}
+
+.star.filled {
+  color: #2B2B2B; /* Colored star */
+}

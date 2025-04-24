@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Smooth scroll for anchor links */
+html {
+  scroll-behavior: smooth;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* Ensure each section fills the viewport and is scrollable */
+section {
   min-height: 100vh;
+}
+
+.menu-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10; /* Ensures the button is above other content */
+}
+
+/* Add styles for the main content to push it down below the fixed navigation */
+.main-content {
+  padding-top: 10px; /* Height of your navigation bar */
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px; /* Adjust as needed */
+  height: 100%;
+  background: #D8BFD8;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  z-index: 5;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.side-menu a {
+  padding: 10px;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  border-radius: 25px;
+  font-family: 'Nunito', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Additional styles to ensure visibility and interactivity */
+.navigation a,
+.side-menu a {
+  cursor: pointer;
+  display: block; /* Make the links fill the container for easier clicking */
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Add box-shadow to transition if needed */
+}
+
+/* Update hover styles for clarity */
+.navigation a:hover,
+.side-menu a:hover {
+  background-color: #C5AECF; 
+  color: #ffffff;
+  border-radius: 25px;
+}
+
+/* Ensure the active link is styled correctly */
+.navigation a.active {
+  font-weight: bold;
+}
+
+/* Close button inside the menu */
+.close-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10; /* Ensures the button is above other content */
+}
+
+/* Additional responsive styles if needed */
+@media (max-width: 768px) {
+  .navigation ul {
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navigation li {
+    display: block;
+    width: 100%;
+  }
+
+  .navigation li a {
+    text-align: left;
+    padding: 10px;
   }
 }

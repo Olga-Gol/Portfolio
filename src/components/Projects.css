@@ -1,0 +1,179 @@
+
+.projects-header {
+    display: inline-block; /* To enable applying padding and border-radius */
+    padding: 5px 10px;
+    border-radius: 20px; /* Rounded corners for the box */
+    background-color: #C5AECF; /* Background color for the header */
+    margin-bottom: 90px; /* Space below the header */
+    font-family: 'Playfair Display', serif;
+  }
+
+.projects-container {
+    text-align: center;
+    padding: 20px;
+    overflow-x: auto;
+  }
+  
+  .projects-grid {
+    z-index: 1;
+    /*display: flex;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates a responsive number of columns */
+    gap: 10px; /* Adjusts the gap between grid items */
+    overflow-x: auto;
+  }
+  
+  .project-item {
+    width: 300px; /* Adjust based on your design */
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+    
+  }
+  
+  .project-item img {
+    width: 350px; /* Fixed width */
+    height: 550px; /* Fixed height */
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .project-item h3 {
+    font-family: 'Playfair Display', sans-serif;
+  }
+  
+  .project-modal {
+    overflow-y: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #D8BFD8;
+    padding: 20px;
+    display: flex;
+    border-radius: 25px;
+    z-index: 100; /* Ensure it's above other content */
+    flex-direction: column;
+    width: 80vw; /* 80% of the viewport width */
+    height: 70vh; /* 70% of the viewport height */
+    max-width: 800px; /* Optional: Maximum width */
+    max-height: 600px; /* Optional: Maximum height */
+  }
+
+  .project-content {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    align-items: center;
+    background-color: #D8BFD8; 
+  }
+  
+  .project-video-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* Centers the video horizontally */
+    align-items: center; /* Centers the video vertically */
+    width: 180px; /* Adjust based on your preference */
+    height: 400px; /* Ensure the container has a specific height if needed */
+    margin-right: 20px; /* Space between video and details */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Subtle shadow */
+  }
+  
+  .project-video-container video {
+    width: 100%; /* Make the video fit the container */
+    max-width: 200px; /* Maximum width it can grow to */
+    max-height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-modal button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10; /* Ensures the button is above other content */
+  }
+  
+  .close-modal {
+    position: absolute;
+   
+  }
+
+.project-details {
+  max-width: 70%; /* Adjust based on your layout */
+  overflow-wrap: break-word;
+  text-align: center;
+}
+.project-details h3 {
+  font-family: 'Playfair Display', serif;
+  color: #2B2B2B; 
+  font-size: 2em;
+  margin-top: 0px;
+}
+.project-description {
+  flex-direction: 'row';
+  overflow-y: auto; /* Allows vertical scrolling within the description */
+  max-height: 200px;
+}
+.project-description h4 {
+  font-size: 16px; 
+  color: #363636; 
+}
+.project-description p {
+  font-size: 16px; 
+  color: #363636; 
+  font-family: 'Nunito', sans-serif;
+  text-align: left;
+  flex-wrap: 'wrap';
+  flex-shrink: 1;
+}
+
+
+  /* Add responsiveness */
+@media (max-width: 768px) {
+    .project-modal {
+      flex-direction: column;
+      width: 90%;
+    }
+    .project-modal button {
+      font-size: 2em; /* Larger close button for easier interaction */
+      padding: 10px; /* More clickable area */
+    }
+    .project-details h3 {
+      font-size: 1.5em; /* Smaller text on smaller screens */
+    }
+  
+    .project-video-container, .project-details {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+      overflow-wrap: break-word;
+    }
+  }
+  /* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .project-modal {
+    width: 60vw; /* Adjust the modal size for large screens */
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  /* Adjustments for tablets */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .project-item {
+    width: 100%; /* Make project items take full width */
+    margin: 10px 0; /* Adjust spacing */
+  }
+  .project-modal {
+    width: 95vw;
+    height: auto; /* Allow the modal to grow with content */
+    max-height: none; /* Remove max-height on very small screens */
+  }
+}

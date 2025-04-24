@@ -1,23 +1,53 @@
-import logo from './logo.svg';
+import React from 'react';
+import HomePage from './components/HomePage';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+
+
+
+
+import { useState } from 'react';
 import './App.css';
+
+const SideMenu = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  // This function will handle the click event for menu items
+  const handleMenuItemClick = (anchor) => {
+    setIsOpen(false);
+    // Smooth scroll to the anchor section
+    document.querySelector(anchor).scrollIntoView({ behavior: 'smooth' });
+  };
+
+  return (
+    <>
+      {!isOpen && (
+        <button className="menu-button" onClick={() => setIsOpen(true)}>☰</button>
+      )}
+      {isOpen && (
+        <div className="side-menu">
+          <button className="close-menu" onClick={() => setIsOpen(false)}>X</button>
+          <a href="#home" onClick={() => handleMenuItemClick('#home')}>Home</a>
+          <a href="#experience" onClick={() => handleMenuItemClick('#experience')}>Experience</a>
+          <a href="#projects" onClick={() => handleMenuItemClick('#projects')}>Projects</a>
+          <a href="#skills" onClick={() => handleMenuItemClick('#skills')}>Skills</a>
+          <a href="mailto:olga.golovatskaia@gmail.com">Contact</a>
+        </div>
+      )}
+    </>
+  );
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <SideMenu />
+      <section id="home"><HomePage /></section>
+      <section id="experience"><Experience /></section>
+      <section id="projects"><Projects /></section>
+      <section id="skills"><Skills /></section>
+      
     </div>
   );
 }

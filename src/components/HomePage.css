@@ -1,0 +1,38 @@
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px; /* Adjust as needed for spacing */
+  }
+  
+  .profile-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .profile-picture {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  }
+  
+  .introduction-section {
+    flex: 2; /* Gives the introduction section more space than the profile */
+    padding: 20px;
+  }
+  .introduction-section h1 {
+    font-family: 'Playfair Display', serif;
+  }
+  .introduction-section p {
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  
+  
+  /* Add media queries to ensure responsiveness */
+  @media (max-width: 768px) {
+    .home-container {
+      flex-direction: column;
+    }
+  }
+  
