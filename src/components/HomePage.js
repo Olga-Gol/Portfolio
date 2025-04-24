@@ -7,14 +7,17 @@ const HomePage = () => (
         <img src="/profile-pic.jpg" alt="Profile" className="profile-picture"/>
       </div>
       <div className="introduction-section">
-        <h1>Hey, I'm <strong>Olga Golovatskaia</strong></h1>
-        <p>I'm a front-end development enthusiast with a strong foundation in computer science and mathematics. I'm 
-            passionate about crafting engaging user experiences through clean, efficient code. I'm highly familiar 
-            with <strong>Java</strong>, <strong>Python</strong>, and <strong>JavaScript</strong>. My toolkit includes 
-            a range of technologies and frameworks, including <strong>React</strong>, <strong>Next.js</strong> and <strong>Node.js</strong>, 
-            among others. When I'm not coding, you might find me exploring virtual reality projects or diving into the abstract algebraic structures.</p>
+      <h1>Hey, I'm <strong>Olga (Olya) Golovatskaia</strong></h1>
+      <p>I'm a Computer Science and Mathematics student at Mount Holyoke College with a strong foundation in
+        <strong>algorithms</strong>, <strong>machine learning</strong>, <strong>optimization</strong>, and <strong>computational geometry</strong>.
+        I enjoy coding, solving complex problems, and working on collaborative projects that bridge theory and real-world applications.
+      </p>
+      <p>I work with languages like <strong>Java</strong>, <strong>JavaScript</strong>, and <strong>Python</strong>, and
+        build with tools and frameworks such as <strong>React</strong>, <strong>Next.js</strong>, <strong>Node.js</strong>,
+        <strong>PyTorch</strong>, and <strong>TensorFlow</strong>.  I'm driven by challenges that call for precise, thoughtful, and scalable solutions.
+      </p>
       </div>
-    </div>
+      </div>
   );
 
 export default HomePage;
