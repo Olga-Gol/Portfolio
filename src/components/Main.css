@@ -156,22 +156,22 @@
     }
     
     .skill-image-container {
-      max-height: 200px;
+      max-height: 500px;
       overflow: hidden;
     }
     
     .skill-button-large {
-      padding: 15px 20px;
+      padding: 30px 40px;
       font-size: 1.2rem;
     }
     
     .skill-button-medium {
-      padding: 12px 18px;
+      padding: 25px 35px;
       font-size: 1rem;
     }
     
     .skill-button-small {
-      padding: 8px 14px;
+      padding: 20px 30px;
       font-size: 0.8rem;
     }
     
