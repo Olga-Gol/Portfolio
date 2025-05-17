@@ -8,7 +8,7 @@ const HomePage = () => (
       </div>
       <div className="introduction-section">
       <h1>Hey, I'm <strong>Olga (Olya) Golovatskaia</strong></h1>
-      <p>I'm a Computer Science and Mathematics student at Mount Holyoke College with a strong foundation in
+      <p>Im a Computer Science and Mathematics student at Mount Holyoke College with a strong foundation in
          <strong>algorithms</strong>, <strong>machine learning</strong>, <strong>optimization</strong>, and <strong>computational geometry</strong>.
         I enjoy coding, solving complex problems, and working on collaborative projects that bridge theory and real-world applications.
       </p>
