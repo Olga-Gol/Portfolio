@@ -7,6 +7,23 @@ const Experience = () => (
     
     <div className="timeline-container">
 
+    <div className="timeline-item">
+        <div className="time-period">June 2024 - August 2024</div>
+        <div className="timeline-divider">
+          <div className="timeline-circle"></div>
+        </div>
+        <div className="job-description">
+        <div className="job-title">Undergraduate Research Assistant</div>
+        <div className="employer-name">University of Maryland, College Park, MD </div>
+        <div className="job-detail">I investigated theoretical problems in <strong>computational geometry</strong> within the Hilbert metric space,
+          focusing on minimum enclosing ball problems. I proved that minimum radius balls over metric spaces with the Heine-Borel
+          property are LP-type problems, representing a significant theoretical contribution to the field. I developed explicit
+          primitives for computing minimum radius balls in the Hilbert metric and successfully proved extension properties for
+          weak metric spaces. Additionally, I contributed to the development of dynamic <strong>JavaScript-based software</strong>
+          that enables manipulation and visualization of Funk, reverse Funk, and Thompson balls in convex polygonal domains.
+        </div>
+      </div>
+
       <div className="timeline-item">
         <div className="time-period">January 2024 - Present</div>
         <div className="timeline-divider">
@@ -69,6 +86,7 @@ const Experience = () => (
         </div>
       </div>
     </div>
+  </div>
   </div>
 );
 

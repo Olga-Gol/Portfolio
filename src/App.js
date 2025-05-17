@@ -1,10 +1,9 @@
 import React from 'react';
 import HomePage from './components/HomePage';
+import Main from './components/Main';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
-
-
 
 
 import { useState } from 'react';
@@ -29,6 +28,7 @@ const SideMenu = () => {
         <div className="side-menu">
           <button className="close-menu" onClick={() => setIsOpen(false)}>X</button>
           <a href="#home" onClick={() => handleMenuItemClick('#home')}>Home</a>
+          <a href="#main" onClick={() => handleMenuItemClick('#main')}>Main</a>
           <a href="#experience" onClick={() => handleMenuItemClick('#experience')}>Experience</a>
           <a href="#projects" onClick={() => handleMenuItemClick('#projects')}>Projects</a>
           <a href="#skills" onClick={() => handleMenuItemClick('#skills')}>Skills</a>
@@ -44,6 +44,7 @@ function App() {
     <div>
       <SideMenu />
       <section id="home"><HomePage /></section>
+      <section id="main"><Main /></section>
       <section id="experience"><Experience /></section>
       <section id="projects"><Projects /></section>
       <section id="skills"><Skills /></section>

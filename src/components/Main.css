@@ -1,0 +1,125 @@
+.skill-button-medium {
+    padding: 14px 20px;
+    font-size: 1rem;
+    background-color: #f0f9ff;
+  }
+  
+  .skill-button-small {
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    background-color: #f8fafc;
+  }
+  
+  /* Modal styling */
+  .skill-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+  }
+  
+  .skill-content {
+    background-color: white;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+    display: flex;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .skill-image-container {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .skill-image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .skill-details {
+    flex: 2;
+    padding: 30px;
+  }
+  
+  .skill-details h3 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 0;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .skill-description {
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+  }
+  
+  .related-projects {
+    margin-top: 25px;
+  }
+  
+  .related-projects h4 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 10px;
+  }
+  
+  .related-projects ul {
+    padding-left: 20px;
+  }
+  
+  .related-projects li {
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 5px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .skill-content {
+      flex-direction: column;
+    }
+    
+    .skill-image-container {
+      max-height: 200px;
+      overflow: hidden;
+    }
+    
+    .skill-button-large {
+      padding: 15px 20px;
+    }
+    
+    .skill-button-medium {
+      padding: 12px 18px;
+    }
+    
+    .skill-button-small {
+      padding: 8px 14px;
+    }
+  }
