@@ -14,7 +14,7 @@
     gap: 15px;
     justify-content: center;
     align-items: center;
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
   }
   
@@ -23,7 +23,7 @@
     border-radius: 10px;
     cursor: pointer;
     font-family: 'Nunito', sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     transition: all 0.3s ease;
     background-color: #f5f5f5;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -36,21 +36,21 @@
   }
   
   .skill-button-large {
-    padding: 18px 24px;
+    padding: 30px 40px;
     font-size: 1.3rem;
     background-color: #e0f2fe;
     z-index: 3;
   }
   
   .skill-button-medium {
-    padding: 14px 20px;
+    padding: 25px 35px;
     font-size: 1.1rem;
     background-color: #f0f9ff;
     z-index: 2;
   }
   
   .skill-button-small {
-    padding: 10px 16px;
+    padding: 20px 30px;
     font-size: 0.9rem;
     background-color: #f8fafc;
     z-index: 1;
@@ -156,22 +156,22 @@
     }
     
     .skill-image-container {
-      max-height: 500px;
+      max-height: 200px;
       overflow: hidden;
     }
     
     .skill-button-large {
-      padding: 30px 40px;
+      padding: 15px 20px;
       font-size: 1.2rem;
     }
     
     .skill-button-medium {
-      padding: 25px 35px;
+      padding: 12px 18px;
       font-size: 1rem;
     }
     
     .skill-button-small {
-      padding: 20px 30px;
+      padding: 8px 14px;
       font-size: 0.8rem;
     }
     
