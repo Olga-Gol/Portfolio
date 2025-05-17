@@ -9,47 +9,38 @@ const Main = () => {
     setActiveSkill(skill);
   };
 
-  // Group skills by category
-  const groupedSkills = skillData.reduce((acc, skill) => {
-    if (!acc[skill.category]) {
-      acc[skill.category] = [];
+  const handleModalClick = (e) => {
+    // Close modal when clicking on the background (not the content)
+    if (e.target.className === 'skill-modal') {
+      setActiveSkill(null);
     }
-    acc[skill.category].push(skill);
-    return acc;
-  }, {});
+  };
 
   return (
     <div id="main" className="main-container">
-      <h2 className="main-header">MY SKILLS</h2>
-      
-      {Object.entries(groupedSkills).map(([category, skills]) => (
-        <div key={category} className="skill-category">
-          <h3 className="category-title">{category}</h3>
-          <div className="skills-grid">
-            {skills.map((skill) => {
-              // Determine button size based on importance level
-              const sizeClass = skill.importance === 'high' 
-                ? 'skill-button-large' 
-                : skill.importance === 'medium' 
-                  ? 'skill-button-medium' 
-                  : 'skill-button-small';
-              
-              return (
-                <button
-                  key={skill.id}
-                  className={`skill-button ${sizeClass}`}
-                  onClick={() => handleSkillClick(skill)}
-                >
-                  {skill.name}
-                </button>
-              );
-            })}
-          </div>
-        </div>
-      ))}
+      <div className="skills-cloud">
+        {skillData.map((skill) => {
+          // Determine button size based on importance level
+          const sizeClass = skill.importance === 'high' 
+            ? 'skill-button-large' 
+            : skill.importance === 'medium' 
+              ? 'skill-button-medium' 
+              : 'skill-button-small';
+          
+          return (
+            <button
+              key={skill.id}
+              className={`skill-button ${sizeClass}`}
+              onClick={() => handleSkillClick(skill)}
+            >
+              {skill.name}
+            </button>
+          );
+        })}
+      </div>
 
       {activeSkill && (
-        <div className="skill-modal">
+        <div className="skill-modal" onClick={handleModalClick}>
           <div className="skill-content">
             <div className="skill-image-container">
               {activeSkill.imgSrc && (
