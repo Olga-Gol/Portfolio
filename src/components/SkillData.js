@@ -40,6 +40,10 @@ const skillData = [
         ),
         relatedProjects: [
             {
+                label: "Portfolio website (React)",
+                skillId: 6
+            },
+            {
                 label: "SHELTER Game (React Native / Expo)",
                 skillId: 10
             }
@@ -116,7 +120,7 @@ const skillData = [
                             such as implementing Euler’s method, Runge-Kutta methods, and phase plane analysis.
                         </p>
                         <p>
-                            Additionally skilled in using MATLAB for data visualization, simulation of mathematical models, and algorithm prototyping 
+                            Additionally skilled in using MATLAB for data visualization, simulation of mathematical models, and algorithm prototyping
                             for mathematical analysis and engineering problems.
                         </p>
                         <p>
@@ -137,20 +141,38 @@ const skillData = [
         name: "React",
         category: "Frameworks & Libraries",
         importance: "high",
-        imgSrc: "/skills/react.jpg",
         description: () => (
             <>
                 <p>
-                    Expertise in building modern web applications with React, including component architecture,
-                    hooks, context API, and state management solutions.
+                    Expertise in building modern web apps using React, with a strong focus on component structure, hooks, 
+                    context, and managing state effectively.
                 </p>
                 <p>
-                    Developed responsive and interactive user interfaces with a focus on reusable components
-                    and efficient rendering patterns.
+                    Developed responsive, interactive interfaces that prioritize reusable components and smooth, efficient rendering.
                 </p>
+                <p>
+                    <strong>Selected project:</strong> This portfolio website, fully built in React with a custom design 
+                    system and responsive layout written in plain CSS.
+                </p>
+                <div className="portfolio-preview-container">
+                    <a
+                        href="https://olgagol.vercel.app/" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="portfolio-preview-link"
+                    >
+                        <img
+                            src="/projects/portfolio-preview.png"
+                            alt="Portfolio Website Preview"
+                            className="portfolio-preview-image"
+                        />
+                        <div className="portfolio-preview-overlay">This portfolio is built with React - view main page</div>
+                    </a>
+                </div>
             </>
         ),
     },
+    
     {
         id: 7,
         name: "Next.js",
