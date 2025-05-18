@@ -384,7 +384,7 @@ const skillData = [
                             className="publication-image-link"
                         >
                             <img
-                                src="/papers/software.png"
+                                src="/papers/software.jpg"
                                 alt="Software for the Thompson and Funk Polygonal Geometry"
                                 className="publication-image"
                             />
@@ -408,7 +408,7 @@ const skillData = [
                             className="publication-image-link"
                         >
                             <img
-                                src="/papers/balls.png"
+                                src="/papers/balls.jpg"
                                 alt="On The Heine-Borel Property and Minimum Enclosing Balls"
                                 className="publication-image"
                             />
