@@ -42,13 +42,10 @@ const Main = () => {
             {activeSkill && (
                 <div className="skill-modal" onClick={handleModalClick}>
                     <div className="skill-content">
-                        <div className="skill-image-container">
-                            {activeSkill.imgSrc && (
-                                <img src={activeSkill.imgSrc} alt={activeSkill.name} />
-                            )}
-                        </div>
+                        
                         <div className="skill-details">
                             <h3>{activeSkill.name}</h3>
+
                             <div className="skill-image-container">
                                 {activeSkill.imgSrc ? (
                                     <img src={activeSkill.imgSrc} alt={activeSkill.name} />
@@ -66,6 +63,9 @@ const Main = () => {
                                         ))}
                                     </div>
                                 ) : null}
+                            </div>
+                            <div className="skill-description">
+                                {activeSkill.description()}
                             </div>
 
                             {activeSkill.relatedProjects && activeSkill.relatedProjects.length > 0 && (
