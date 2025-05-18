@@ -71,6 +71,22 @@ const Main = () => {
                                 <div className="skill-description">
                                     {activeSkill.description()}
                                 </div>
+
+                                {activeSkill.relatedProjects && activeSkill.relatedProjects.length > 0 && (
+                                    <div className="related-projects">
+                                        <h4>Related Projects</h4>
+                                        <ul>
+                                            {activeSkill.relatedProjects.map(({ label, url }, index) => (
+                                                <li key={index}>
+                                                    <a href={url} target="_blank" rel="noopener noreferrer">
+                                                        {label}
+                                                    </a>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                )}
+
                             </div>
                         </div>
                     </div>

@@ -38,6 +38,12 @@ const skillData = [
                 </p>
             </>
         ),
+        relatedProjects: [
+            {
+                label: "SHELTER Game (React Native / Expo)",
+                url: "/projects/shelter-game"
+            }
+        ]
     },
     {
         id: 3,
@@ -186,9 +192,51 @@ const skillData = [
         ),
     },
 
-    // Technical Fields
     {
         id: 10,
+        title: "React Native/Expo",
+        videos: [
+            "/ShelterGameplay/ShelterGameplay.MP4"
+        ],
+        description: () => (
+            <>
+                <p>
+                    SHELTER is a mobile adaptation of a strategic board game where players receive a random set of cards 
+                    representing traits such as gender, age, and profession. The objective is to persuade others that your 
+                    character’s attributes enhance survival chances in a bunker scenario.
+                </p>
+                <p>
+                    This project was my first foray into iOS app development, leveraging the React Native framework alongside 
+                    the Expo ecosystem. It served as a comprehensive exercise in mobile development, producing a polished and 
+                    engaging game experience tailored for friends and casual players.
+                </p>
+                <h4>Technical Skills Applied:</h4>
+                <ul className="shelter">
+                    <li><strong>React Native Framework:</strong> Developed a native-like user interface utilizing React’s 
+                    component-based architecture, ensuring responsiveness and smooth interaction on iOS devices.</li>
+                    <li><strong>Expo Ecosystem:</strong> Streamlined app development with Expo’s managed workflow, simplifying 
+                    native code handling and focusing development on JavaScript.</li>
+                    <li><strong>Responsive Design:</strong> Implemented adaptive layouts and styling for optimal display across 
+                    screen sizes and orientations.</li>
+                    <li><strong>Navigation & UI Components:</strong> Employed React Navigation for structured app flow and 
+                    utilized core React Native components for consistent UI aesthetics.</li>
+
+                    <a
+                        href="https://github.com/Olga-Gol/ShelterGame"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View project on GitHub
+                    </a>
+                </ul>
+            </>
+        ),
+    },
+
+
+    // Technical Fields
+    {
+        id: 11,
         name: "Computational Geometry",
         category: "Technical Fields",
         importance: "high",
@@ -233,7 +281,7 @@ const skillData = [
         ),
     },
     {
-        id: 11,
+        id: 12,
         name: "Machine Learning",
         category: "Technical Fields",
         importance: "high",
@@ -255,7 +303,7 @@ const skillData = [
         ),
     },
     {
-        id: 12,
+        id: 13,
         name: "Optimization",
         category: "Technical Fields",
         importance: "high",
@@ -287,7 +335,7 @@ const skillData = [
         ),
     },
     {
-        id: 13,
+        id: 14,
         name: "Algorithms",
         category: "Technical Fields",
         importance: "high",
@@ -308,7 +356,7 @@ const skillData = [
 
     // Additional Skills
     {
-        id: 14,
+        id: 15,
         name: "Publications",
         category: "Additional Skills",
         importance: "medium",
@@ -357,7 +405,7 @@ const skillData = [
         ),
     },
     {
-        id: 15,
+        id: 16,
         name: "Web Development",
         category: "Additional Skills",
         importance: "medium",
@@ -377,7 +425,7 @@ const skillData = [
         ),
     },
     {
-        id: 16,
+        id: 17,
         name: "Mobile Development",
         category: "Additional Skills",
         importance: "small",
@@ -396,7 +444,7 @@ const skillData = [
         ),
     },
     {
-        id: 17,
+        id: 18,
         name: "Data Analysis",
         category: "Additional Skills",
         importance: "medium",
