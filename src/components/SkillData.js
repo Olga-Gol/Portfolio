@@ -161,17 +161,27 @@ const skillData = [
         name: "TensorFlow",
         category: "Frameworks & Libraries",
         importance: "medium",
-        imgSrc: "/skills/tensorflow.jpg",
         description: () => (
             <>
-                <p>
-                    Strong skills in TensorFlow for building and deploying machine learning models. Experience
-                    with model training, evaluation, and deployment in production environments.
-                </p>
-                <p>
-                    Utilized TensorFlow's ecosystem for data preprocessing, model architecture design, and
-                    performance optimization.
-                </p>
+                <div className="optimization">
+                    <span>
+                        Proficient in TensorFlow for building, training, and deploying neural network models with strong focus on
+                        model evaluation and production readiness.
+                    </span>
+
+                    <span>
+                        Applied TensorFlow to develop a neural network that predicts phishing websites based on URLs, achieving 96.61%
+                        test accuracy.
+                    </span>
+                    <a
+                        href="https://github.com/Olga-Gol/PhishingWebsitesML/blob/main/ML%20models/NeuralNetwork.ipynb"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ fontWeight: 'bold' }}
+                    >
+                        View project on GitHub
+                    </a>
+                </div>
             </>
         ),
     },
@@ -238,6 +248,9 @@ const skillData = [
                     Developed and deployed machine learning solutions for classification, regression, clustering,
                     and optimization problems across various domains.
                 </p>
+                <p>
+                    Familiar with key algorithms including decision trees, linear regression, and neural networks.
+                </p>
             </>
         ),
     },
@@ -268,7 +281,7 @@ const skillData = [
                         rel="noopener noreferrer"
                     >
                         View paper (PDF)
-                    </a>.
+                    </a>
                 </div>
             </>
         ),
