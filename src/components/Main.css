@@ -170,6 +170,10 @@
     font-size: 0.9em;
 }
 
+.publication-list li a {
+    font-size: 1em; 
+  }
+
 .publication-list a {
     font-weight: 600;
     text-decoration: underline;
