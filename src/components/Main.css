@@ -193,11 +193,17 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
+/*TensorFlow*/
+.tensorflow{
+    gap: 20px;
+}
+
 /*Publications*/
 .publications-grid {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .publication-image-container {
@@ -322,6 +328,24 @@
 }
 
 .optimization-text p {
+    margin: 0 0 10px 0;
+    line-height: 1.6;
+}
+
+/*MATLAB*/
+.matlab {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.matlab-text {
+    flex: 1;
+    font-size: 1em;
+    color: #444;
+}
+
+.matlab-text p {
     margin: 0 0 10px 0;
     line-height: 1.6;
 }

@@ -85,9 +85,55 @@ const skillData = [
         ),
     },
 
-    // Frameworks & Libraries
     {
         id: 5,
+        name: "MATLAB",
+        category: "Programming Languages",
+        importance: "medium",
+        description: () => (
+            <>
+                <div className="matlab">
+                    <div className="project-image-container">
+                        <a
+                            href="/papers/Runge_Kutta_Method.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <img
+                                src="/papers/rungekutta.png"
+                                alt="Runge-Kutta Method"
+                                className="project-image"
+                            />
+                            <div className="image-overlay">Runge-Kutta Method</div>
+                        </a>
+                    </div>
+                    <div className="matlab-text">
+                        <p>
+                            Extensive experience with MATLAB, particularly in the context of linear algebra and ordinary differential equations (ODEs).
+                            Familiar with solving large systems of linear equations, performing LU and QR decompositions, computing eigenvalues and eigenvectors,
+                            and analyzing the stability of matrices. In ODEs, experience includes both analytical and numerical approaches,
+                            such as implementing Euler’s method, Runge-Kutta methods, and phase plane analysis.
+                        </p>
+                        <p>
+                            Additionally skilled in using MATLAB for data visualization, simulation of mathematical models, and algorithm prototyping 
+                            for mathematical analysis and engineering problems.
+                        </p>
+                        <p>
+                            <strong>Selected project:</strong> Authored a report providing an overview of the classical fourth-order Runge-Kutta method
+                            for solving initial value problems in ODEs. Implemented the method in MATLAB, validated the results with known
+                            analytical solutions, and visualized error behavior across varying step sizes. The project emphasized both
+                            theoretical foundations and practical implementation.
+                        </p>
+                    </div>
+                </div>
+            </>
+        ),
+    },
+
+    // Frameworks & Libraries
+    {
+        id: 6,
         name: "React",
         category: "Frameworks & Libraries",
         importance: "high",
@@ -106,7 +152,7 @@ const skillData = [
         ),
     },
     {
-        id: 6,
+        id: 7,
         name: "Next.js",
         category: "Frameworks & Libraries",
         importance: "medium",
@@ -125,7 +171,7 @@ const skillData = [
         ),
     },
     {
-        id: 7,
+        id: 8,
         name: "Node.js",
         category: "Frameworks & Libraries",
         importance: "medium",
@@ -144,7 +190,7 @@ const skillData = [
         ),
     },
     {
-        id: 8,
+        id: 9,
         name: "PyTorch",
         category: "Frameworks & Libraries",
         importance: "high",
@@ -163,13 +209,13 @@ const skillData = [
         ),
     },
     {
-        id: 9,
+        id: 10,
         name: "TensorFlow",
         category: "Frameworks & Libraries",
         importance: "medium",
         description: () => (
             <>
-                <div className="optimization">
+                <div className="tensorflow">
                     <p>
                         Proficient in TensorFlow for building, training, and deploying neural network models with strong focus on
                         model evaluation and production readiness.
@@ -193,7 +239,7 @@ const skillData = [
     },
 
     {
-        id: 10,
+        id: 11,
         name: "React Native/Expo",
         category: "Frameworks & Libraries",
         importance: "medium",
@@ -235,10 +281,9 @@ const skillData = [
         ),
     },
 
-
     // Technical Fields
     {
-        id: 11,
+        id: 12,
         name: "Computational Geometry",
         category: "Technical Fields",
         importance: "high",
@@ -283,7 +328,7 @@ const skillData = [
         ),
     },
     {
-        id: 12,
+        id: 13,
         name: "Machine Learning",
         category: "Technical Fields",
         importance: "high",
@@ -305,7 +350,7 @@ const skillData = [
         ),
     },
     {
-        id: 13,
+        id: 14,
         name: "Optimization",
         category: "Technical Fields",
         importance: "high",
@@ -348,7 +393,7 @@ const skillData = [
         ),
     },
     {
-        id: 14,
+        id: 15,
         name: "Algorithms",
         category: "Technical Fields",
         importance: "high",
@@ -369,7 +414,7 @@ const skillData = [
 
     // Additional Skills
     {
-        id: 15,
+        id: 16,
         name: "Publications",
         category: "Additional Skills",
         importance: "medium",
@@ -393,7 +438,7 @@ const skillData = [
                                     Software for the Thompson and Funk Polygonal Geometry
                                 </div>
                                 <div className="overlay-description">
-                                    Accepted for presentation at SoCG 2025, a Rank A conference. Interactive tools for Funk, 
+                                    Accepted for presentation at SoCG 2025, a Rank A conference. Interactive tools for Funk,
                                     Thompson, and Hilbert geometries in convex polygons.
                                 </div>
                             </div>
@@ -417,7 +462,7 @@ const skillData = [
                                     On The Heine-Borel Property and Minimum Enclosing Balls
                                 </div>
                                 <div className="overlay-description">
-                                    Preprint. LP-type structures in minimum-radius ball problems for Hilbert, Thompson, 
+                                    Preprint. LP-type structures in minimum-radius ball problems for Hilbert, Thompson,
                                     and Funk metrics.
                                 </div>
                             </div>
@@ -428,7 +473,7 @@ const skillData = [
         ),
     },
     {
-        id: 16,
+        id: 17,
         name: "Web Development",
         category: "Additional Skills",
         importance: "medium",
@@ -448,7 +493,7 @@ const skillData = [
         ),
     },
     {
-        id: 17,
+        id: 18,
         name: "Mobile Development",
         category: "Additional Skills",
         importance: "small",
@@ -467,7 +512,7 @@ const skillData = [
         ),
     },
     {
-        id: 18,
+        id: 19,
         name: "Data Analysis",
         category: "Additional Skills",
         importance: "medium",
