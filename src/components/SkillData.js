@@ -327,13 +327,10 @@ const skillData = [
                     <span>
                         Strong background in mathematical optimization, including linear programming (LP), integer LP,
                         convex optimization, minimum-cost network flow (MCNF), metaheuristics, and constraint satisfaction problems (CSP).
-                    </span>
-                    <span>
+                    
                         Experienced in applying optimization techniques to complex problems in resource allocation, scheduling, and
                         improving algorithm efficiency.
-                    </span>
-
-                    <span>
+                
                         <strong>Selected project:</strong> Developed an LP-based model for the Minesweeper game that formulates
                         game constraints as linear equations to identify safe moves. The model adapts existing approaches and
                         demonstrates practical application on a 5x5 board.
