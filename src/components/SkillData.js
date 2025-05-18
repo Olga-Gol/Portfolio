@@ -170,15 +170,15 @@ const skillData = [
         description: () => (
             <>
                 <div className="optimization">
-                    <span>
+                    <p>
                         Proficient in TensorFlow for building, training, and deploying neural network models with strong focus on
                         model evaluation and production readiness.
-                    </span>
+                    </p>
 
-                    <span>
+                    <p>
                         Applied TensorFlow to develop a neural network that predicts phishing websites based on URLs, achieving 96.61%
                         test accuracy.
-                    </span>
+                    </p>
                     <a
                         href="https://github.com/Olga-Gol/PhishingWebsitesML/blob/main/ML%20models/NeuralNetwork.ipynb"
                         target="_blank"
@@ -223,15 +223,14 @@ const skillData = [
                         screen sizes and orientations.</li>
                     <li><strong>Navigation & UI Components:</strong> Employed React Navigation for structured app flow and
                         utilized core React Native components for consistent UI aesthetics.</li>
-
-                    <a
-                        href="https://github.com/Olga-Gol/ShelterGame"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        View project on GitHub
-                    </a>
                 </ul>
+                <a
+                    href="https://github.com/Olga-Gol/ShelterGame"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View project on GitHub
+                </a>
             </>
         ),
     },
@@ -376,45 +375,55 @@ const skillData = [
         importance: "medium",
         description: () => (
             <>
-                <p>
-                    Co-author of research in computational geometry, focusing on metric spaces and optimization algorithms.
-                </p>
-                <ul className="publication-list">
-                    <li>
+                <div className="publications-grid">
+                    <div className="publication-image-container">
                         <a
                             href="https://arxiv.org/abs/2503.01988"
                             target="_blank"
                             rel="noopener noreferrer"
+                            className="publication-image-link"
                         >
-                            Software for the Thompson and Funk Polygonal Geometry
-                        </a>{' '}
-                        <span>
-                            Accepted for presentation at{' '}
-                            <a
-                                href="https://socg25.github.io/index.html"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                style={{ fontWeight: 'bold' }}
-                            >
-                                SoCG 2025
-                            </a>
-                            , a Rank A conference. Interactive tools for exploring Funk, Thompson, and Hilbert geometries in convex polygons.
-                        </span>
-                    </li>
-                    <li>
+                            <img
+                                src="/papers/software.png"
+                                alt="Software for the Thompson and Funk Polygonal Geometry"
+                                className="publication-image"
+                            />
+                            <div className="publication-overlay">
+                                <div className="overlay-title">
+                                    Software for the Thompson and Funk Polygonal Geometry
+                                </div>
+                                <div className="overlay-description">
+                                    Accepted for presentation at SoCG 2025, a Rank A conference. Interactive tools for Funk, 
+                                    Thompson, and Hilbert geometries in convex polygons.
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div className="publication-image-container">
                         <a
                             href="https://arxiv.org/abs/2412.17138"
                             target="_blank"
                             rel="noopener noreferrer"
+                            className="publication-image-link"
                         >
-                            On The Heine-Borel Property and Minimum Enclosing Balls
+                            <img
+                                src="/papers/balls.png"
+                                alt="On The Heine-Borel Property and Minimum Enclosing Balls"
+                                className="publication-image"
+                            />
+                            <div className="publication-overlay">
+                                <div className="overlay-title">
+                                    On The Heine-Borel Property and Minimum Enclosing Balls
+                                </div>
+                                <div className="overlay-description">
+                                    Preprint. LP-type structures in minimum-radius ball problems for Hilbert, Thompson, 
+                                    and Funk metrics.
+                                </div>
+                            </div>
                         </a>
-                        <span>
-                            Preprint. Study of LP-type structures in minimum radius ball
-                            problems for Hilbert, Thompson, and Funk metrics.
-                        </span>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </>
         ),
     },
