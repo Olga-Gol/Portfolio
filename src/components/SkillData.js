@@ -105,7 +105,7 @@ const skillData = [
                                 alt="Runge-Kutta Method"
                                 className="project-image"
                             />
-                            <div className="image-overlay">Runge-Kutta Method</div>
+                            <div className="matlab-image-overlay">Runge-Kutta Method</div>
                         </a>
                     </div>
                     <div className="matlab-text">
