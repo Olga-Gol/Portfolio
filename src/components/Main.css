@@ -182,6 +182,19 @@
     color: #444;
 }
 
+.optimization span {
+    display: block;
+    margin-top: 4px;
+    font-size: 0.9em;
+    color: #444;
+}
+
+.optimization a {
+    font-weight: 600;
+    text-decoration: underline;
+    color: #007acc;
+}
+
 
 
 /* Responsive adjustments */

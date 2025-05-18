@@ -256,10 +256,12 @@ const skillData = [
                     Experienced in applying optimization techniques to complex problems in resource allocation, scheduling, and
                     improving algorithm efficiency.
                 </p>
-                <p>
-                    <strong>Selected project:</strong> Developed an LP-based model for the Minesweeper game that formulates
-                    game constraints as linear equations to identify safe moves. The model adapts existing approaches and
-                    demonstrates practical application on a 5x5 board.
+                <div className="optimization">
+                    <span>
+                        <strong>Selected project:</strong> Developed an LP-based model for the Minesweeper game that formulates
+                        game constraints as linear equations to identify safe moves. The model adapts existing approaches and
+                        demonstrates practical application on a 5x5 board.
+                    </span>
                     <a
                         href="/papers/minesweeper-lp.pdf"
                         target="_blank"
@@ -267,7 +269,7 @@ const skillData = [
                     >
                         View paper (PDF)
                     </a>.
-                </p>
+                </div>
             </>
         ),
     },
