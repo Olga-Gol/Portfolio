@@ -41,7 +41,7 @@ const skillData = [
         relatedProjects: [
             {
                 label: "SHELTER Game (React Native / Expo)",
-                url: "/projects/shelter-game"
+                skillId: 10
             }
         ]
     },
@@ -194,7 +194,10 @@ const skillData = [
 
     {
         id: 10,
-        title: "React Native/Expo",
+        name: "React Native/Expo",
+        category: "Frameworks & Libraries",
+        importance: "medium",
+        videoOrientation: "vertical",
         videos: [
             "/ShelterGameplay/ShelterGameplay.MP4"
         ],

@@ -16,6 +16,14 @@ const Main = () => {
         }
     };
 
+    const handleOpenSkill = (skillId) => {
+        const selectedSkill = skillData.find((skill) => skill.id === skillId);
+        if (selectedSkill) {
+            setActiveSkill(selectedSkill);
+        }
+    };
+    
+
     return (
         <div id="main" className="main-container">
             <div className="skills-cloud">
@@ -40,7 +48,7 @@ const Main = () => {
             </div>
 
             {activeSkill && (
-                <div v className="skill-modal" onClick={handleModalClick}>
+                <div className="skill-modal" onClick={handleModalClick}>
                     <div className="skill-content">
 
                         <div className="skill-details">
@@ -52,7 +60,7 @@ const Main = () => {
                                         {activeSkill.imgSrc ? (
                                             <img src={activeSkill.imgSrc} alt={activeSkill.name} />
                                         ) : (
-                                            <div className="video-rotation-container">
+                                            <div className={`video-rotation-container ${activeSkill.videoOrientation === 'vertical' ? 'vertical' : 'horizontal'}`}>
                                                 {activeSkill.videos.map((videoSrc, index) => (
                                                     <video
                                                         key={index}
@@ -76,11 +84,14 @@ const Main = () => {
                                     <div className="related-projects">
                                         <h4>Related Projects</h4>
                                         <ul>
-                                            {activeSkill.relatedProjects.map(({ label, url }, index) => (
+                                            {activeSkill.relatedProjects.map(({ label, skillId }, index) => (
                                                 <li key={index}>
-                                                    <a href={url} target="_blank" rel="noopener noreferrer">
+                                                    <button
+                                                        className="link-button"
+                                                        onClick={() => handleOpenSkill(skillId)}
+                                                    >
                                                         {label}
-                                                    </a>
+                                                    </button>
                                                 </li>
                                             ))}
                                         </ul>
