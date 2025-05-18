@@ -218,6 +218,7 @@
 .optimization {
     display: flex;
     align-items: flex-start;
+    gap: 20px;
 }
 
 .project-image-link {
@@ -240,17 +241,15 @@
     cursor: pointer;
 }
 
-.optimization span {
-    display: block;
-    margin-top: 4px;
+.optimization-text {
+    flex: 1;
     font-size: 1em;
     color: #444;
 }
 
-.optimization a {
-    font-weight: 600;
-    text-decoration: underline;
-    color: #007acc;
+.optimization-text p {
+    margin: 0 0 10px 0;
+    line-height: 1.6;
 }
 
 

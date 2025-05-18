@@ -324,17 +324,22 @@ const skillData = [
                             className="project-image"
                         />
                     </a>
-                    <span>
-                        Strong background in mathematical optimization, including linear programming (LP), integer LP,
-                        convex optimization, minimum-cost network flow (MCNF), metaheuristics, and constraint satisfaction problems (CSP).
-                    
-                        Experienced in applying optimization techniques to complex problems in resource allocation, scheduling, and
-                        improving algorithm efficiency.
-                
-                        <strong>Selected project:</strong> Developed an LP-based model for the Minesweeper game that formulates
-                        game constraints as linear equations to identify safe moves. The model adapts existing approaches and
-                        demonstrates practical application on a 5x5 board.
-                    </span>
+                    <div className="optimization-text">
+                        <p>
+                            Strong background in mathematical optimization, including linear programming (LP), integer LP,
+                            convex optimization, minimum-cost network flow (MCNF), metaheuristics, and constraint satisfaction problems (CSP).
+                        </p>
+                        <p>
+                            Experienced in applying optimization techniques to complex problems in resource allocation, scheduling, and
+                            improving algorithm efficiency.
+                        </p>
+
+                        <p>
+                            <strong>Selected project:</strong> Developed an LP-based model for the Minesweeper game that formulates
+                            game constraints as linear equations to identify safe moves. The model adapts existing approaches and
+                            demonstrates practical application on a 5x5 board.
+                        </p>
+                    </div>
                 </div>
             </>
         ),
