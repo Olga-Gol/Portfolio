@@ -313,20 +313,21 @@ const skillData = [
         description: () => (
             <>
                 <div className="optimization">
-                    <a
-                        href="/papers/minesweeper-lp.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
                     <div className="project-image-container">
-                        <img
-                            src="/papers/minesweeper.png"
-                            alt="Minesweeper Optimization Project"
-                            className="project-image"
-                        />
-                        <div className="image-overlay">Minesweeper Optimization Paper</div>
-                    </div>                       
-                    </a>
+                        <a
+                            href="/papers/minesweeper-lp.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <img
+                                src="/papers/minesweeper.png"
+                                alt="Minesweeper Optimization Project"
+                                className="project-image"
+                            />
+                            <div className="image-overlay">Minesweeper Optimization Paper</div>
+                        </a>
+                    </div>
                     <div className="optimization-text">
                         <p>
                             Strong background in mathematical optimization, including linear programming (LP), integer LP,

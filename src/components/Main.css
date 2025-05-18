@@ -241,13 +241,6 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-image-link:hover .project-image {
-    filter: brightness(60%);
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
-    cursor: pointer;
-}
-
 .image-overlay {
     position: absolute;
     top: 50%;
@@ -265,9 +258,17 @@
     white-space: nowrap;
 }
 
-.project-image-link:hover .image-overlay {
+.project-image-container:hover .project-image {
+    filter: brightness(60%);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+    cursor: pointer;
+}
+
+.project-image-container:hover .image-overlay {
     opacity: 1;
 }
+
 
 .optimization-text {
     flex: 1;
