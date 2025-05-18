@@ -42,42 +42,46 @@ const Main = () => {
             {activeSkill && (
                 <div className="skill-modal" onClick={handleModalClick}>
                     <div className="skill-content">
-                        
+
                         <div className="skill-details">
                             <h3>{activeSkill.name}</h3>
 
-                            <div className="skill-image-container">
-                                {activeSkill.imgSrc ? (
-                                    <img src={activeSkill.imgSrc} alt={activeSkill.name} />
-                                ) : activeSkill.videos ? (
-                                    <div className="video-rotation-container">
-                                        {activeSkill.videos.map((videoSrc, index) => (
-                                            <video
-                                                key={index}
-                                                src={videoSrc}
-                                                autoPlay
-                                                loop
-                                                muted
-                                                className="rotating-video"
-                                            />
-                                        ))}
-                                    </div>
-                                ) : null}
-                            </div>
-                            <div className="skill-description">
-                                {activeSkill.description()}
-                            </div>
+                            <div className="skill-body">
 
-                            {activeSkill.relatedProjects && activeSkill.relatedProjects.length > 0 && (
-                                <div className="related-projects">
-                                    <h4>Related Projects</h4>
-                                    <ul>
-                                        {activeSkill.relatedProjects.map((project, index) => (
-                                            <li key={index}>{project}</li>
-                                        ))}
-                                    </ul>
+                                <div className="skill-image-container">
+                                    {activeSkill.imgSrc ? (
+                                        <img src={activeSkill.imgSrc} alt={activeSkill.name} />
+                                    ) : activeSkill.videos ? (
+                                        <div className="video-rotation-container">
+                                            {activeSkill.videos.map((videoSrc, index) => (
+                                                <video
+                                                    key={index}
+                                                    src={videoSrc}
+                                                    autoPlay
+                                                    loop
+                                                    muted
+                                                    className="rotating-video"
+                                                />
+                                            ))}
+                                        </div>
+                                    ) : null}
                                 </div>
-                            )}
+
+                                <div className="skill-description">
+                                    {activeSkill.description()}
+                                </div>
+
+                                {activeSkill.relatedProjects && activeSkill.relatedProjects.length > 0 && (
+                                    <div className="related-projects">
+                                        <h4>Related Projects</h4>
+                                        <ul>
+                                            {activeSkill.relatedProjects.map((project, index) => (
+                                                <li key={index}>{project}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                )}
+                            </div>
                         </div>
                     </div>
                     <button className="close-button" onClick={() => setActiveSkill(null)}>X</button>

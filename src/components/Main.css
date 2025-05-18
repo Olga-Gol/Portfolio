@@ -56,7 +56,6 @@
     z-index: 1;
 }
 
-/* Modal styling */
 .skill-modal {
     position: fixed;
     top: 0;
@@ -82,7 +81,6 @@
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 1001;
-    /* Ensure content is above the background */
 }
 
 .skill-image-container {
@@ -99,9 +97,15 @@
 
 .skill-details {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 30px;
     padding: 30px;
+}
+
+.skill-body {
+    display: flex;
+    flex-direction: row; 
+    gap: 30px;
 }
 
 .skill-details h3 {
@@ -176,8 +180,12 @@
     .skill-content {
         flex-direction: column;
     }
-    
+
     .skill-details {
+        flex-direction: column;
+    }
+
+    .skill-body {
         flex-direction: column;
     }
 
