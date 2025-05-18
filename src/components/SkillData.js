@@ -19,7 +19,6 @@ const skillData = [
                 </p>
             </>
         ),
-        relatedProjects: ["Algorithm Visualization Tool", "Data Structure Implementation"]
     },
     {
         id: 2,
@@ -39,7 +38,6 @@ const skillData = [
                 </p>
             </>
         ),
-        relatedProjects: ["SHELTER Game", "Personal Portfolio Website"]
     },
     {
         id: 3,
@@ -60,7 +58,6 @@ const skillData = [
                 </p>
             </>
         ),
-        relatedProjects: ["Machine Learning Research Project", "Data Visualization Dashboard"]
     },
     {
         id: 4,
@@ -80,7 +77,6 @@ const skillData = [
                 </p>
             </>
         ),
-        relatedProjects: ["Computational Geometry Implementation"]
     },
 
     // Frameworks & Libraries
@@ -102,7 +98,6 @@ const skillData = [
                 </p>
             </>
         ),
-        relatedProjects: ["Personal Portfolio Website", "Interactive Dashboard"]
     },
     {
         id: 6,
@@ -122,7 +117,6 @@ const skillData = [
                 </p>
             </>
         ),
-        relatedProjects: ["Personal Portfolio Website"]
     },
     {
         id: 7,
@@ -142,7 +136,6 @@ const skillData = [
                 </p>
             </>
         ),
-        relatedProjects: ["API Development Project", "Full-Stack Web Application"]
     },
     {
         id: 8,
@@ -162,7 +155,6 @@ const skillData = [
                 </p>
             </>
         ),
-        relatedProjects: ["Machine Learning Research Project", "Computer Vision Application"]
     },
     {
         id: 9,
@@ -182,7 +174,6 @@ const skillData = [
                 </p>
             </>
         ),
-        relatedProjects: ["ML Model Deployment", "Neural Network Implementation"]
     },
 
     // Technical Fields
@@ -230,7 +221,6 @@ const skillData = [
                 </p>
             </div>
         ),
-        relatedProjects: []
     },
     {
         id: 11,
@@ -250,7 +240,6 @@ const skillData = [
                 </p>
             </>
         ),
-        relatedProjects: ["Predictive Analytics Project", "Classification Algorithm Implementation"]
     },
     {
         id: 12,
@@ -270,7 +259,6 @@ const skillData = [
                 </p>
             </>
         ),
-        relatedProjects: ["Resource Allocation Optimizer", "Algorithm Efficiency Research"]
     },
     {
         id: 13,
@@ -290,7 +278,6 @@ const skillData = [
                 </p>
             </>
         ),
-        relatedProjects: ["Algorithm Visualization Tool", "Competitive Programming Solutions"]
     },
 
     // Additional Skills
@@ -299,20 +286,41 @@ const skillData = [
         name: "Publications",
         category: "Additional Skills",
         importance: "medium",
-        imgSrc: "/skills/publications.jpg",
         description: () => (
             <>
                 <p>
-                    Author and co-author of academic publications in the fields of computer science and
-                    mathematics. Research focused on computational geometry and optimization algorithms.
+                    Co-author of research in computational geometry, focusing on metric spaces and optimization algorithms.
                 </p>
-                <p>
-                    Contributed to peer-reviewed journals and conference proceedings, demonstrating ability
-                    to conduct rigorous research and communicate complex technical concepts.
-                </p>
+                <ul className="publication-list">
+                    <li>
+                        <a
+                            href="https://arxiv.org/abs/2503.01988"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Visualization and Manipulation of Polygonal Metrics
+                        </a>
+                        <span>
+                            – Accepted for presentation at SoCG 2025. Interactive tools for
+                            exploring Funk, Thompson, and Hilbert geometries in convex polygons.
+                        </span>
+                    </li>
+                    <li>
+                        <a
+                            href="https://arxiv.org/abs/2412.17138"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LP-Type Properties of Metric Ball Problems
+                        </a>
+                        <span>
+                            – Preprint. Study of LP-type structures in minimum radius ball
+                            problems for Hilbert, Thompson, and Funk metrics.
+                        </span>
+                    </li>
+                </ul>
             </>
         ),
-        relatedProjects: ["Research Paper on Geometric Algorithms", "Optimization Methods Study"]
     },
     {
         id: 15,
@@ -333,7 +341,6 @@ const skillData = [
                 </p>
             </>
         ),
-        relatedProjects: ["Personal Portfolio Website", "Full-Stack Web Application"]
     },
     {
         id: 16,
@@ -353,7 +360,6 @@ const skillData = [
                 </p>
             </>
         ),
-        relatedProjects: ["SHELTER Game"]
     },
     {
         id: 17,
@@ -373,7 +379,6 @@ const skillData = [
                 </p>
             </>
         ),
-        relatedProjects: ["Data Visualization Dashboard", "Statistical Analysis Project"]
     }
 ];
 
