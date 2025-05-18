@@ -300,6 +300,7 @@ const skillData = [
                         >
                             Software for the Thompson and Funk Polygonal Geometry
                         </a>{' '}
+                        <span>
                         Accepted for presentation at{' '}
                         <a
                             href="https://socg25.github.io/index.html"
@@ -310,6 +311,7 @@ const skillData = [
                             SoCG 2025
                         </a>
                         , a Rank A conference. Interactive tools for exploring Funk, Thompson, and Hilbert geometries in convex polygons.
+                        </span>
                     </li>
                     <li>
                         <a
