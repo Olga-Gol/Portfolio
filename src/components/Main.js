@@ -104,7 +104,7 @@ const Main = () => {
                     </div>
                     <button className="close-button" onClick={() => setActiveSkill(null)}>X</button>
                 </div>
-            )};
+            )}
         </div>
     )
 };
