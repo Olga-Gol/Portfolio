@@ -177,11 +177,11 @@
 .video-rotation-container.horizontal .rotating-video {
     width: 300px;
     height: 195px;
-    gap: 25px;
+    margin-bottom: 12px;
 }
 
 .video-rotation-container.vertical .rotating-video {
-    width: 200px;
+    width: 185px;
     height: 400px;
     gap: 25px;
 }
