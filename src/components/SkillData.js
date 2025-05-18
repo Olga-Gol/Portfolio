@@ -246,16 +246,27 @@ const skillData = [
         name: "Optimization",
         category: "Technical Fields",
         importance: "high",
-        imgSrc: "/skills/optimization.jpg",
         description: () => (
             <>
                 <p>
-                    Strong background in mathematical optimization techniques and algorithms. Experience with
-                    linear programming, convex optimization, metaheuristics, and constraint satisfaction.
+                    Strong background in mathematical optimization, including linear programming (LP), integer LP,
+                    convex optimization, minimum-cost network flow (MCNF), metaheuristics, and constraint satisfaction problems (CSP).
                 </p>
                 <p>
-                    Applied optimization methods to solve complex problems in resource allocation, scheduling,
-                    and algorithm efficiency improvement.
+                    Experienced in applying optimization techniques to complex problems in resource allocation, scheduling, and
+                    improving algorithm efficiency.
+                </p>
+                <p>
+                    <strong>Selected project:</strong> Developed an LP-based model for the Minesweeper game that formulates
+                    game constraints as linear equations to identify safe moves. The model adapts existing approaches and
+                    demonstrates practical application on a 5x5 board.
+                    <a
+                        href="/papers/minesweeper-lp.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View paper (PDF)
+                    </a>.
                 </p>
             </>
         ),
@@ -301,16 +312,16 @@ const skillData = [
                             Software for the Thompson and Funk Polygonal Geometry
                         </a>{' '}
                         <span>
-                        Accepted for presentation at{' '}
-                        <a
-                            href="https://socg25.github.io/index.html"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ fontWeight: 'bold' }}
-                        >
-                            SoCG 2025
-                        </a>
-                        , a Rank A conference. Interactive tools for exploring Funk, Thompson, and Hilbert geometries in convex polygons.
+                            Accepted for presentation at{' '}
+                            <a
+                                href="https://socg25.github.io/index.html"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ fontWeight: 'bold' }}
+                            >
+                                SoCG 2025
+                            </a>
+                            , a Rank A conference. Interactive tools for exploring Funk, Thompson, and Hilbert geometries in convex polygons.
                         </span>
                     </li>
                     <li>
