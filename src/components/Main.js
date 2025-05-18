@@ -22,7 +22,7 @@ const Main = () => {
             setActiveSkill(selectedSkill);
         }
     };
-    
+
 
     return (
         <div id="main" className="main-container">
@@ -76,28 +76,29 @@ const Main = () => {
                                     </div>
                                 )}
 
-                                <div className="skill-description">
-                                    {activeSkill.description()}
-                                </div>
-
-                                {activeSkill.relatedProjects && activeSkill.relatedProjects.length > 0 && (
-                                    <div className="related-projects">
-                                        <h4>Related Projects</h4>
-                                        <ul>
-                                            {activeSkill.relatedProjects.map(({ label, skillId }, index) => (
-                                                <li key={index}>
-                                                    <button
-                                                        className="link-button"
-                                                        onClick={() => handleOpenSkill(skillId)}
-                                                    >
-                                                        {label}
-                                                    </button>
-                                                </li>
-                                            ))}
-                                        </ul>
+                                <div className="skill-text-content">
+                                    <div className="skill-description">
+                                        {activeSkill.description()}
                                     </div>
-                                )}
 
+                                    {activeSkill.relatedProjects && activeSkill.relatedProjects.length > 0 && (
+                                        <div className="related-projects">
+                                            <h4>Related Projects</h4>
+                                            <ul>
+                                                {activeSkill.relatedProjects.map(({ label, skillId }, index) => (
+                                                    <li key={index}>
+                                                        <button
+                                                            className="link-button"
+                                                            onClick={() => handleOpenSkill(skillId)}
+                                                        >
+                                                            {label}
+                                                        </button>
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
+                                </div>
                             </div>
                         </div>
                     </div>
