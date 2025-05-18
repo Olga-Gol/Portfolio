@@ -93,7 +93,7 @@ const skillData = [
         description: () => (
             <>
                 <div className="matlab">
-                    <div className="project-image-container">
+                    <div className="matlab-project-image-container">
                         <a
                             href="/papers/Runge_Kutta_Method.pdf"
                             target="_blank"

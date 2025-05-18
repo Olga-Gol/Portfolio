@@ -200,6 +200,7 @@
 
 /*Publications*/
 .publications-grid {
+    margin-left: 50px;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -349,6 +350,13 @@
 .matlab-text p {
     margin: 0 0 10px 0;
     line-height: 1.6;
+}
+
+.matlab-project-image-container {
+    margin-top: 150px;
+    position: relative;
+    display: inline-block;
+    width: 350px;
 }
 
 /* Responsive adjustments */
