@@ -298,12 +298,18 @@ const skillData = [
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            Visualization and Manipulation of Polygonal Metrics
+                            Software for the Thompson and Funk Polygonal Geometry
+                        </a>{' '}
+                        Accepted for presentation at{' '}
+                        <a
+                            href="https://socg25.github.io/index.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ fontWeight: 'bold' }}
+                        >
+                            SoCG 2025
                         </a>
-                        <span>
-                            – Accepted for presentation at SoCG 2025. Interactive tools for
-                            exploring Funk, Thompson, and Hilbert geometries in convex polygons.
-                        </span>
+                        , a Rank A conference. Interactive tools for exploring Funk, Thompson, and Hilbert geometries in convex polygons.
                     </li>
                     <li>
                         <a
@@ -311,10 +317,10 @@ const skillData = [
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            LP-Type Properties of Metric Ball Problems
+                            On The Heine-Borel Property and Minimum Enclosing Balls
                         </a>
                         <span>
-                            – Preprint. Study of LP-type structures in minimum radius ball
+                            Preprint. Study of LP-type structures in minimum radius ball
                             problems for Hilbert, Thompson, and Funk metrics.
                         </span>
                     </li>
