@@ -221,6 +221,12 @@
     gap: 20px;
 }
 
+.project-image-container {
+    position: relative;
+    display: inline-block;
+    width: 350px;
+}
+
 .project-image-link {
     flex-shrink: 0;
     border-radius: 10px;
@@ -236,9 +242,31 @@
 }
 
 .project-image-link:hover .project-image {
+    filter: brightness(60%);
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
     cursor: pointer;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.1em;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 12px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.project-image-link:hover .image-overlay {
+    opacity: 1;
 }
 
 .optimization-text {

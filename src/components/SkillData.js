@@ -318,11 +318,14 @@ const skillData = [
                         target="_blank"
                         rel="noopener noreferrer"
                     >
+                    <div className="project-image-container">
                         <img
                             src="/papers/minesweeper.png"
                             alt="Minesweeper Optimization Project"
                             className="project-image"
                         />
+                        <div className="image-overlay">Minesweeper Optimization Paper</div>
+                    </div>                       
                     </a>
                     <div className="optimization-text">
                         <p>
