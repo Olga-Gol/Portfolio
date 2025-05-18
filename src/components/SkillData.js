@@ -191,65 +191,43 @@ const skillData = [
         name: "Computational Geometry",
         category: "Technical Fields",
         importance: "high",
-        imgSrc: "/skills/computational-geometry.jpg",
+        videos: [
+            "/videos/hilbert1.mp4",
+            "/videos/hilbert2.mp4",
+            "/videos/hilbert3.mp4"
+        ],
         description: () => (
-            <div className="geo-description-wrapper">
-                <div className="video-rotation-container">
-                    <video
-                        src="/videos/hilbert1.mp4"
-                        autoPlay
-                        loop
-                        muted
-                        className="rotating-video"
-                    />
-                    <video
-                        src="/videos/hilbert2.mp4"
-                        autoPlay
-                        loop
-                        muted
-                        className="rotating-video"
-                    />
-                    <video
-                        src="/videos/hilbert3.mp4"
-                        autoPlay
-                        loop
-                        muted
-                        className="rotating-video"
-                    />
-                </div>
-
-                <div className="geo-text">
-                    <p>
-                        Conducted advanced research in computational geometry during the REU program for
-                        Combinatorics, Algorithms, and AI for Real Problems at the University of Maryland,
-                        College Park. Focused on theoretical problems in the Hilbert metric space, including
-                        the Minimum Enclosing Ball (MEB) problem.
-                    </p>
-                    <p>
-                        Proved that minimum radius balls over metric spaces with the Heine-Borel property are
-                        LP-type problems, and developed geometric primitives for computing such balls in Hilbert
-                        geometry. Demonstrated extension properties in weak metric spaces and contributed to a
-                        dynamic visualization tool for convex polygonal domains.
-                    </p>
-                    <p>
-                        Co-developed an interactive JavaScript-based application for visualizing and manipulating
-                        Funk, reverse Funk, and Thompson balls in convex sets. The tool is publicly available at{" "}
-                        <a
-                            href="https://funk-geo-visualizer.vercel.app/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            funk-geo-visualizer.vercel.app
-                        </a>. View the code on{" "}
-                        <a
-                            href="https://github.com/nithin1527/funk-geo-visualizer?tab=readme-ov-file"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            GitHub
-                        </a>.
-                    </p>
-                </div>
+            <div>
+                <p>
+                    Conducted advanced research in computational geometry during the REU program for
+                    Combinatorics, Algorithms, and AI for Real Problems at the University of Maryland,
+                    College Park. Focused on theoretical problems in the Hilbert metric space, including
+                    the Minimum Enclosing Ball (MEB) problem.
+                </p>
+                <p>
+                    Proved that minimum radius balls over metric spaces with the Heine-Borel property are
+                    LP-type problems, and developed geometric primitives for computing such balls in Hilbert
+                    geometry. Demonstrated extension properties in weak metric spaces and contributed to a
+                    dynamic visualization tool for convex polygonal domains.
+                </p>
+                <p>
+                    Co-developed an interactive JavaScript-based application for visualizing and manipulating
+                    Funk, reverse Funk, and Thompson balls in convex sets. The tool is publicly available at{" "}
+                    <a
+                        href="https://funk-geo-visualizer.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        funk-geo-visualizer.vercel.app
+                    </a>. View the code on{" "}
+                    <a
+                        href="https://github.com/nithin1527/funk-geo-visualizer?tab=readme-ov-file"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>.
+                </p>
             </div>
         ),
         relatedProjects: []
