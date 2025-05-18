@@ -101,7 +101,7 @@ const skillData = [
                         >
 
                             <img
-                                src="/papers/rungekutta.png"
+                                src="/papers/rungekutta.jpg"
                                 alt="Runge-Kutta Method"
                                 className="project-image"
                             />
