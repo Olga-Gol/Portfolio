@@ -182,9 +182,8 @@
 }
 
 .video-rotation-container.vertical .rotating-video {
-    width: 247px;
-    height: 550px;
-    margin-bottom: 12px;
+    width: 236px;
+    height: 525px;
     object-fit: cover;
 }
 
