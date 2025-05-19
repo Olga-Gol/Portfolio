@@ -75,10 +75,10 @@ const skillData = [
     {
         id: 4,
         name: "C++",
-        showNameOnButton: true,
+        showNameOnButton: false,
         category: "Programming Languages",
         importance: "medium",
-        imgSrc: "/skills/cpp.jpg",
+        bgImage: '/images/cplus.png',
         description: () => (
             <>
                 <p>
@@ -236,10 +236,10 @@ const skillData = [
     {
         id: 9,
         name: "PyTorch",
-        showNameOnButton: true,
+        showNameOnButton: false,
         category: "Frameworks & Libraries",
         importance: "high",
-        imgSrc: "/skills/pytorch.jpg",
+        bgImage: '/images/pytorch.png',
         description: () => (
             <>
                 <p>
@@ -480,7 +480,7 @@ const skillData = [
         showNameOnButton: true,
         category: "Technical Fields",
         importance: "high",
-        imgSrc: "/skills/algorithms.jpg",
+        bgImage: '/images/algo.jpg',
         description: () => (
             <>
                 <p>
@@ -562,8 +562,8 @@ const skillData = [
         name: "Web Development",
         showNameOnButton: true,
         category: "Additional Skills",
-        importance: "medium",
-        imgSrc: "/skills/web-development.jpg",
+        importance: "small",
+        bgImage: '/images/web.jpeg',
         description: () => (
             <>
                 <p>
@@ -580,31 +580,11 @@ const skillData = [
     },
     {
         id: 19,
-        name: "Mobile Development",
-        showNameOnButton: true,
-        category: "Additional Skills",
-        importance: "small",
-        imgSrc: "/skills/mobile-development.jpg",
-        description: () => (
-            <>
-                <p>
-                    Experience in mobile application development using React Native and Expo. Created
-                    cross-platform mobile experiences with native-like performance and UI.
-                </p>
-                <p>
-                    Developed the SHELTER game as a mobile application, implementing game logic, user
-                    interface, and interactive elements for iOS.
-                </p>
-            </>
-        ),
-    },
-    {
-        id: 20,
         name: "Data Analysis",
         showNameOnButton: true,
         category: "Additional Skills",
-        importance: "medium",
-        imgSrc: "/skills/data-analysis.jpg",
+        importance: "small",
+        bgImage: '/images/data.png',
         description: () => (
             <>
                 <p>

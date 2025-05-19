@@ -62,8 +62,8 @@
     font-size: 1.8rem;
     /*background-color: #e0f2fe;*/
     z-index: 3;
-    min-width: 250px;
-    min-height: 170px;
+    width: 270px;
+    height: 180px;
 }
 
 .skill-button-medium {
@@ -71,8 +71,8 @@
     font-size: 1.6rem;
     /*background-color: #f0f9ff;*/
     z-index: 2;
-    min-width: 230px;
-    min-height: 150px;
+    width: 250px;
+    height: 150px;
 }
 
 .skill-button-small {
@@ -80,8 +80,8 @@
     font-size: 1rem;
     /*background-color: #f8fafc;*/
     z-index: 1;
-    min-width: 210px;
-    min-height: 130px;
+    width: 220px;
+    height: 130px;
 }
 
 .skill-modal {
