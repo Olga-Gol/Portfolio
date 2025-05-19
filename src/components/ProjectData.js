@@ -62,97 +62,6 @@ const projectData = [
     },
     {
         id: 4,
-        name: "MATLAB",
-        showNameOnButton: true,
-        category: "Programming Languages",
-        importance: "medium",
-        bgImage: '/images/matlab.png',
-        description: () => (
-            <>
-                <div className="matlab">
-                    <div className="matlab-project-image-container">
-                        <a
-                            href="/papers/Runge_Kutta_Method.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-
-                            <img
-                                src="/papers/rungekutta.jpg"
-                                alt="Runge-Kutta Method"
-                                className="matlab-project-image"
-                            />
-                            <div className="matlab-image-overlay">Runge-Kutta Method</div>
-                        </a>
-                    </div>
-                    <div className="matlab-text">
-                        <p>
-                            Extensive experience with MATLAB, particularly in the context of linear algebra and ordinary differential equations (ODEs).
-                            Familiar with solving large systems of linear equations, performing LU and QR decompositions, computing eigenvalues and eigenvectors,
-                            and analyzing the stability of matrices. In ODEs, experience includes both analytical and numerical approaches,
-                            such as implementing Euler’s method, Runge-Kutta methods, and phase plane analysis.
-                        </p>
-                        <p>
-                            Additionally skilled in using MATLAB for data visualization, simulation of mathematical models, and algorithm prototyping
-                            for mathematical analysis and engineering problems.
-                        </p>
-                        <p>
-                            <strong>Selected project:</strong> Authored a report providing an overview of the classical fourth-order Runge-Kutta method
-                            for solving initial value problems in ODEs. Implemented the method in MATLAB, validated the results with known
-                            analytical solutions, and visualized error behavior across varying step sizes. The project emphasized both
-                            theoretical foundations and practical implementation.
-                        </p>
-                    </div>
-                </div>
-            </>
-        ),
-    },
-    {
-        id: 5,
-        name: "React Native/Expo",
-        showNameOnButton: false,
-        category: "Frameworks & Libraries",
-        importance: "small",
-        videoOrientation: "vertical",
-        videos: [
-            "/ShelterGameplay/ShelterGameplay.MP4"
-        ],
-        bgImage: '/images/expo.png',
-        description: () => (
-            <>
-                <p>
-                    SHELTER is a mobile adaptation of a strategic board game where players receive a random set of cards
-                    representing traits such as gender, age, and profession. The objective is to persuade others that your
-                    character’s attributes enhance survival chances in a bunker scenario.
-                </p>
-                <p>
-                    This project was my first foray into iOS app development, leveraging the React Native framework alongside
-                    the Expo ecosystem. It served as a comprehensive exercise in mobile development, producing a polished and
-                    engaging game experience tailored for friends and casual players.
-                </p>
-                <h4>Technical Skills Applied:</h4>
-                <ul className="shelter">
-                    <li><strong>React Native Framework:</strong> Developed a native-like user interface utilizing React’s
-                        component-based architecture, ensuring responsiveness and smooth interaction on iOS devices.</li>
-                    <li><strong>Expo Ecosystem:</strong> Streamlined app development with Expo’s managed workflow, simplifying
-                        native code handling and focusing development on JavaScript.</li>
-                    <li><strong>Responsive Design:</strong> Implemented adaptive layouts and styling for optimal display across
-                        screen sizes and orientations.</li>
-                    <li><strong>Navigation & UI Components:</strong> Employed React Navigation for structured app flow and
-                        utilized core React Native components for consistent UI aesthetics.</li>
-                </ul>
-                <a
-                    href="https://github.com/Olga-Gol/ShelterGame"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    View project on GitHub
-                </a>
-            </>
-        ),
-    },
-    {
-        id: 6,
         name: "React",
         showNameOnButton: true,
         category: "Frameworks & Libraries",
@@ -202,7 +111,138 @@ const projectData = [
         ),
     }, 
     {
+        id: 5,
+        name: "MATLAB",
+        showNameOnButton: true,
+        category: "Programming Languages",
+        importance: "medium",
+        bgImage: '/images/matlab.png',
+        description: () => (
+            <>
+                <div className="matlab">
+                    <div className="matlab-project-image-container">
+                        <a
+                            href="/papers/Runge_Kutta_Method.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <img
+                                src="/papers/rungekutta.jpg"
+                                alt="Runge-Kutta Method"
+                                className="matlab-project-image"
+                            />
+                            <div className="matlab-image-overlay">Runge-Kutta Method</div>
+                        </a>
+                    </div>
+                    <div className="matlab-text">
+                        <p>
+                            Extensive experience with MATLAB, particularly in the context of linear algebra and ordinary differential equations (ODEs).
+                            Familiar with solving large systems of linear equations, performing LU and QR decompositions, computing eigenvalues and eigenvectors,
+                            and analyzing the stability of matrices. In ODEs, experience includes both analytical and numerical approaches,
+                            such as implementing Euler’s method, Runge-Kutta methods, and phase plane analysis.
+                        </p>
+                        <p>
+                            Additionally skilled in using MATLAB for data visualization, simulation of mathematical models, and algorithm prototyping
+                            for mathematical analysis and engineering problems.
+                        </p>
+                        <p>
+                            <strong>Selected project:</strong> Authored a report providing an overview of the classical fourth-order Runge-Kutta method
+                            for solving initial value problems in ODEs. Implemented the method in MATLAB, validated the results with known
+                            analytical solutions, and visualized error behavior across varying step sizes. The project emphasized both
+                            theoretical foundations and practical implementation.
+                        </p>
+                    </div>
+                </div>
+            </>
+        ),
+    },
+    {
+        id: 6,
+        name: "React Native/Expo",
+        showNameOnButton: false,
+        category: "Frameworks & Libraries",
+        importance: "small",
+        videoOrientation: "vertical",
+        videos: [
+            "/ShelterGameplay/ShelterGameplay.MP4"
+        ],
+        bgImage: '/images/expo.png',
+        description: () => (
+            <>
+                <p>
+                    SHELTER is a mobile adaptation of a strategic board game where players receive a random set of cards
+                    representing traits such as gender, age, and profession. The objective is to persuade others that your
+                    character’s attributes enhance survival chances in a bunker scenario.
+                </p>
+                <p>
+                    This project was my first foray into iOS app development, leveraging the React Native framework alongside
+                    the Expo ecosystem. It served as a comprehensive exercise in mobile development, producing a polished and
+                    engaging game experience tailored for friends and casual players.
+                </p>
+                <h4>Technical Skills Applied:</h4>
+                <ul className="shelter">
+                    <li><strong>React Native Framework:</strong> Developed a native-like user interface utilizing React’s
+                        component-based architecture, ensuring responsiveness and smooth interaction on iOS devices.</li>
+                    <li><strong>Expo Ecosystem:</strong> Streamlined app development with Expo’s managed workflow, simplifying
+                        native code handling and focusing development on JavaScript.</li>
+                    <li><strong>Responsive Design:</strong> Implemented adaptive layouts and styling for optimal display across
+                        screen sizes and orientations.</li>
+                    <li><strong>Navigation & UI Components:</strong> Employed React Navigation for structured app flow and
+                        utilized core React Native components for consistent UI aesthetics.</li>
+                </ul>
+                <a
+                    href="https://github.com/Olga-Gol/ShelterGame"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View project on GitHub
+                </a>
+            </>
+        ),
+    },
+    {
         id: 7,
+        name: "PyTorch",
+        showNameOnButton: false,
+        category: "Frameworks & Libraries",
+        importance: "small",
+        bgImage: '/images/pytorch.png',
+        description: () => (
+            <>
+                <p>
+                    Advanced experience in deep learning model development using PyTorch. Implemented neural
+                    networks for various applications including computer vision and optimization tasks.
+                </p>
+                <p>
+                    Designed custom loss functions, training loops, and optimization strategies for specialized
+                    machine learning applications.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 8,
+        name: "Next.js",
+        showNameOnButton: false,
+        category: "Frameworks & Libraries",
+        importance: "medium",
+        bgImage: '/images/next.jpg',
+        description: () => (
+            <>
+                <p>
+                    Experience with Next.js for server-side rendering and creating optimized React applications.
+                    Implemented routing, API routes, and static site generation features.
+                </p>
+                <p>
+                    Built performance-focused web applications leveraging Next.js's hybrid rendering capabilities
+                    and optimization features.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 9,
         name: "JavaScript",
         showNameOnButton: false,
         category: "Programming Languages",
@@ -232,7 +272,7 @@ const projectData = [
         ]
     },   
     {
-        id: 8,
+        id: 10,
         name: "Python",
         showNameOnButton: false,
         category: "Programming Languages",
@@ -248,46 +288,6 @@ const projectData = [
                 <p>
                     Implemented machine learning models using scikit-learn and PyTorch, with a focus on
                     optimization algorithms and computational geometry applications.
-                </p>
-            </>
-        ),
-    },
-    {
-        id: 9,
-        name: "Next.js",
-        showNameOnButton: false,
-        category: "Frameworks & Libraries",
-        importance: "medium",
-        bgImage: '/images/next.jpg',
-        description: () => (
-            <>
-                <p>
-                    Experience with Next.js for server-side rendering and creating optimized React applications.
-                    Implemented routing, API routes, and static site generation features.
-                </p>
-                <p>
-                    Built performance-focused web applications leveraging Next.js's hybrid rendering capabilities
-                    and optimization features.
-                </p>
-            </>
-        ),
-    },
-    {
-        id: 10,
-        name: "PyTorch",
-        showNameOnButton: false,
-        category: "Frameworks & Libraries",
-        importance: "small",
-        bgImage: '/images/pytorch.png',
-        description: () => (
-            <>
-                <p>
-                    Advanced experience in deep learning model development using PyTorch. Implemented neural
-                    networks for various applications including computer vision and optimization tasks.
-                </p>
-                <p>
-                    Designed custom loss functions, training loops, and optimization strategies for specialized
-                    machine learning applications.
                 </p>
             </>
         ),
@@ -315,107 +315,6 @@ const projectData = [
     },
     {
         id: 12,
-        name: "TensorFlow",
-        showNameOnButton: false,
-        category: "Frameworks & Libraries",
-        importance: "medium",
-        bgImage: '/images/tensor.png',
-        description: () => (
-            <>
-                <div className="tensorflow">
-                    <p>
-                        Proficient in TensorFlow for building, training, and deploying neural network models with strong focus on
-                        model evaluation and production readiness.
-                    </p>
-
-                    <p>
-                        Applied TensorFlow to develop a neural network that predicts phishing websites based on URLs, achieving 96.61%
-                        test accuracy.
-                    </p>
-                    <a
-                        href="https://github.com/Olga-Gol/PhishingWebsitesML/blob/main/ML%20models/NeuralNetwork.ipynb"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{ fontWeight: 'bold' }}
-                    >
-                        View project on GitHub
-                    </a>
-                </div>
-            </>
-        ),
-    },  
-    {
-        id: 13,
-        name: "Computational Geometry",
-        showNameOnButton: true,
-        category: "Technical Fields",
-        importance: "high",
-        videos: [
-            "/videos/hilbert1.mp4",
-            "/videos/hilbert2.mp4",
-            "/videos/hilbert3.mp4"
-        ],
-        bgImage: '/images/compgeo.gif',
-        description: () => (
-            <div>
-                <p>
-                    Conducted advanced research in computational geometry during the REU program for
-                    Combinatorics, Algorithms, and AI for Real Problems at the University of Maryland,
-                    College Park. Focused on theoretical problems in the Hilbert metric space, including
-                    the Minimum Enclosing Ball (MEB) problem.
-                </p>
-                <p>
-                    Proved that minimum radius balls over metric spaces with the Heine-Borel property are
-                    LP-type problems, and developed geometric primitives for computing such balls in Hilbert
-                    geometry. Demonstrated extension properties in weak metric spaces and contributed to a
-                    dynamic visualization tool for convex polygonal domains.
-                </p>
-                <p>
-                    Co-developed an interactive JavaScript-based application for visualizing and manipulating
-                    Funk, reverse Funk, and Thompson balls in convex sets. The tool is publicly available at{" "}
-                    <a
-                        href="https://funk-geo-visualizer.vercel.app/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        funk-geo-visualizer.vercel.app
-                    </a>. View the code on{" "}
-                    <a
-                        href="https://github.com/nithin1527/funk-geo-visualizer?tab=readme-ov-file"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        GitHub
-                    </a>.
-                </p>
-            </div>
-        ),
-    },
-    {
-        id: 14,
-        name: "Machine Learning",
-        showNameOnButton: true,
-        category: "Technical Fields",
-        importance: "high",
-        bgImage: '/images/ml.jpg',
-        description: () => (
-            <>
-                <p>
-                    Comprehensive understanding of machine learning principles, algorithms, and applications.
-                    Experience with supervised and unsupervised learning, model evaluation, and feature engineering.
-                </p>
-                <p>
-                    Developed and deployed machine learning solutions for classification, regression, clustering,
-                    and optimization problems across various domains.
-                </p>
-                <p>
-                    Familiar with key algorithms including decision trees, linear regression, and neural networks.
-                </p>
-            </>
-        ),
-    },  
-    {
-        id: 15,
         name: "Node.js",
         showNameOnButton: false,
         category: "Frameworks & Libraries",
@@ -435,80 +334,7 @@ const projectData = [
         ),
     },
     {
-        id: 16,
-        name: "Spring",
-        showNameOnButton: false,
-        category: "Frameworks & Libraries",
-        importance: "medium",
-        bgImage: '/images/spring.png',
-        description: () => (
-            <>
-                <div className="tensorflow">
-                    <p>
-                       Spring
-                    </p>
-                    <p>
-                        
-                    </p>
-                    <a
-                        href="https://github.com/Olga-Gol/PhishingWebsitesML/blob/main/ML%20models/NeuralNetwork.ipynb"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{ fontWeight: 'bold' }}
-                    >
-                        View project on GitHub
-                    </a>
-                </div>
-            </>
-        ),
-    },
-    {
-        id: 17,
-        name: "Optimization",
-        showNameOnButton: true,
-        category: "Technical Fields",
-        importance: "high",
-        bgImage: '/images/opt.png',
-        description: () => (
-            <>
-                <div className="optimization">
-                    <div className="project-image-container">
-                        <a
-                            href="/papers/minesweeper-lp.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-
-                            <img
-                                src="/papers/minesweeper.png"
-                                alt="Minesweeper Optimization Project"
-                                className="project-image"
-                            />
-                            <div className="image-overlay">Minesweeper Optimization Paper</div>
-                        </a>
-                    </div>
-                    <div className="optimization-text">
-                        <p>
-                            Strong background in mathematical optimization, including linear programming (LP), integer LP,
-                            convex optimization, minimum-cost network flow (MCNF), metaheuristics, and constraint satisfaction problems (CSP).
-                        </p>
-                        <p>
-                            Experienced in applying optimization techniques to complex problems in resource allocation, scheduling, and
-                            improving algorithm efficiency.
-                        </p>
-
-                        <p>
-                            <strong>Selected project:</strong> Developed an LP-based model for the Minesweeper game that formulates
-                            game constraints as linear equations to identify safe moves. The model adapts existing approaches and
-                            demonstrates practical application on a 5x5 board.
-                        </p>
-                    </div>
-                </div>
-            </>
-        ),
-    },
-    {
-        id: 18,
+        id: 13,
         name: "Publications",
         showNameOnButton: true,
         category: "Additional Skills",
@@ -567,13 +393,187 @@ const projectData = [
                 </div>
             </>
         ),
+    }, 
+    {
+        id: 14,
+        name: "Computational Geometry",
+        showNameOnButton: true,
+        category: "Technical Fields",
+        importance: "high",
+        videos: [
+            "/videos/hilbert1.mp4",
+            "/videos/hilbert2.mp4",
+            "/videos/hilbert3.mp4"
+        ],
+        bgImage: '/images/compgeo.gif',
+        description: () => (
+            <div>
+                <p>
+                    Conducted advanced research in computational geometry during the REU program for
+                    Combinatorics, Algorithms, and AI for Real Problems at the University of Maryland,
+                    College Park. Focused on theoretical problems in the Hilbert metric space, including
+                    the Minimum Enclosing Ball (MEB) problem.
+                </p>
+                <p>
+                    Proved that minimum radius balls over metric spaces with the Heine-Borel property are
+                    LP-type problems, and developed geometric primitives for computing such balls in Hilbert
+                    geometry. Demonstrated extension properties in weak metric spaces and contributed to a
+                    dynamic visualization tool for convex polygonal domains.
+                </p>
+                <p>
+                    Co-developed an interactive JavaScript-based application for visualizing and manipulating
+                    Funk, reverse Funk, and Thompson balls in convex sets. The tool is publicly available at{" "}
+                    <a
+                        href="https://funk-geo-visualizer.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        funk-geo-visualizer.vercel.app
+                    </a>. View the code on{" "}
+                    <a
+                        href="https://github.com/nithin1527/funk-geo-visualizer?tab=readme-ov-file"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>.
+                </p>
+            </div>
+        ),
+    },
+    {
+        id: 15,
+        name: "Machine Learning",
+        showNameOnButton: true,
+        category: "Technical Fields",
+        importance: "high",
+        bgImage: '/images/ml.jpg',
+        description: () => (
+            <>
+                <p>
+                    Comprehensive understanding of machine learning principles, algorithms, and applications.
+                    Experience with supervised and unsupervised learning, model evaluation, and feature engineering.
+                </p>
+                <p>
+                    Developed and deployed machine learning solutions for classification, regression, clustering,
+                    and optimization problems across various domains.
+                </p>
+                <p>
+                    Familiar with key algorithms including decision trees, linear regression, and neural networks.
+                </p>
+            </>
+        ),
+    },  
+    {
+        id: 16,
+        name: "Spring",
+        showNameOnButton: false,
+        category: "Frameworks & Libraries",
+        importance: "medium",
+        bgImage: '/images/spring.png',
+        description: () => (
+            <>
+                <div className="tensorflow">
+                    <p>
+                       Spring
+                    </p>
+                    <p>
+                        
+                    </p>
+                    <a
+                        href="https://github.com/Olga-Gol/PhishingWebsitesML/blob/main/ML%20models/NeuralNetwork.ipynb"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ fontWeight: 'bold' }}
+                    >
+                        View project on GitHub
+                    </a>
+                </div>
+            </>
+        ),
+    },
+    {
+        id: 17,
+        name: "TensorFlow",
+        showNameOnButton: false,
+        category: "Frameworks & Libraries",
+        importance: "medium",
+        bgImage: '/images/tensor.png',
+        description: () => (
+            <>
+                <div className="tensorflow">
+                    <p>
+                        Proficient in TensorFlow for building, training, and deploying neural network models with strong focus on
+                        model evaluation and production readiness.
+                    </p>
+
+                    <p>
+                        Applied TensorFlow to develop a neural network that predicts phishing websites based on URLs, achieving 96.61%
+                        test accuracy.
+                    </p>
+                    <a
+                        href="https://github.com/Olga-Gol/PhishingWebsitesML/blob/main/ML%20models/NeuralNetwork.ipynb"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ fontWeight: 'bold' }}
+                    >
+                        View project on GitHub
+                    </a>
+                </div>
+            </>
+        ),
+    }, 
+    {
+        id: 18,
+        name: "Optimization",
+        showNameOnButton: true,
+        category: "Technical Fields",
+        importance: "high",
+        bgImage: '/images/opt.png',
+        description: () => (
+            <>
+                <div className="optimization">
+                    <div className="project-image-container">
+                        <a
+                            href="/papers/minesweeper-lp.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <img
+                                src="/papers/minesweeper.png"
+                                alt="Minesweeper Optimization Project"
+                                className="project-image"
+                            />
+                            <div className="image-overlay">Minesweeper Optimization Paper</div>
+                        </a>
+                    </div>
+                    <div className="optimization-text">
+                        <p>
+                            Strong background in mathematical optimization, including linear programming (LP), integer LP,
+                            convex optimization, minimum-cost network flow (MCNF), metaheuristics, and constraint satisfaction problems (CSP).
+                        </p>
+                        <p>
+                            Experienced in applying optimization techniques to complex problems in resource allocation, scheduling, and
+                            improving algorithm efficiency.
+                        </p>
+
+                        <p>
+                            <strong>Selected project:</strong> Developed an LP-based model for the Minesweeper game that formulates
+                            game constraints as linear equations to identify safe moves. The model adapts existing approaches and
+                            demonstrates practical application on a 5x5 board.
+                        </p>
+                    </div>
+                </div>
+            </>
+        ),
     },
     {
         id: 19,
         name: "Algorithms",
         showNameOnButton: true,
         category: "Technical Fields",
-        importance: "high",
+        importance: "medium",
         bgImage: '/images/algo.jpg',
         description: () => (
             <>
