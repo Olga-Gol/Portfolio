@@ -170,15 +170,15 @@ const skillData = [
                         <p>
                             <strong>Selected project:</strong> This portfolio website, fully built in React with a custom design
                             system and responsive layout written in plain CSS.
-                            <a
-                                href="https://github.com/Olga-Gol/Portfolio"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                style={{ fontWeight: 'bold' }}
-                            >
-                                View project on GitHub
-                            </a>
                         </p>
+                        <a
+                            href="https://github.com/Olga-Gol/Portfolio"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ fontWeight: 'bold' }}
+                        >
+                            View project on GitHub
+                        </a>
                     </div>
                 </div>
             </>
