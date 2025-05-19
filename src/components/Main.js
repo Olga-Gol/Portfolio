@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Main.css';
-import skillData from './SkillData';
+import projectData from './ProjectData';
 
 const Main = () => {
     const [activeSkill, setActiveSkill] = useState(null);
@@ -17,7 +17,7 @@ const Main = () => {
     };
 
     const handleOpenSkill = (skillId) => {
-        const selectedSkill = skillData.find((skill) => skill.id === skillId);
+        const selectedSkill = projectData.find((skill) => skill.id === skillId);
         if (selectedSkill) {
             setActiveSkill(selectedSkill);
         }
@@ -27,7 +27,7 @@ const Main = () => {
     return (
         <div id="main" className="main-container">
             <div className="skills-cloud">
-                {skillData.map((skill) => {
+                {projectData.map((skill) => {
                     // Determine button size based on importance level
                     const sizeClass = skill.importance === 'high'
                         ? 'skill-button-large'
