@@ -141,6 +141,7 @@ const skillData = [
         name: "React",
         category: "Frameworks & Libraries",
         importance: "high",
+        bgImage: '/images/react.png',
         description: () => (
             <>
                 <div className="portfolio">

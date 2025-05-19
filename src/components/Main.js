@@ -40,6 +40,7 @@ const Main = () => {
                             key={skill.id}
                             className={`skill-button ${sizeClass}`}
                             onClick={() => handleSkillClick(skill)}
+                            style={skill.bgImage ? { backgroundImage: `url(${skill.bgImage})` } : {}}
                         >
                             {skill.name}
                         </button>
