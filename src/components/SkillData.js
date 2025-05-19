@@ -147,7 +147,7 @@ const skillData = [
         name: "React",
         showNameOnButton: true,
         category: "Frameworks & Libraries",
-        importance: "high",
+        importance: "medium",
         bgImage: '/images/react.png',
         description: () => (
             <>
@@ -238,7 +238,7 @@ const skillData = [
         name: "PyTorch",
         showNameOnButton: false,
         category: "Frameworks & Libraries",
-        importance: "high",
+        importance: "medium",
         bgImage: '/images/pytorch.png',
         description: () => (
             <>
@@ -334,7 +334,7 @@ const skillData = [
         name: "Spring Boot",
         showNameOnButton: false,
         category: "Frameworks & Libraries",
-        importance: "medium",
+        importance: "small",
         bgImage: '/images/spring.png',
         description: () => (
             <>
@@ -479,7 +479,7 @@ const skillData = [
         name: "Algorithms",
         showNameOnButton: true,
         category: "Technical Fields",
-        importance: "high",
+        importance: "medium",
         bgImage: '/images/algo.jpg',
         description: () => (
             <>
