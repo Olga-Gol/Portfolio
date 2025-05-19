@@ -1,7 +1,46 @@
 const projectData = [
-    // Programming Languages
     {
         id: 1,
+        name: "Data Analysis",
+        showNameOnButton: true,
+        category: "Additional Skills",
+        importance: "small",
+        bgImage: '/images/data.png',
+        description: () => (
+            <>
+                <p>
+                    Strong data analysis capabilities using Python and specialized libraries. Experience
+                    with data cleaning, exploratory analysis, visualization, and statistical methods.
+                </p>
+                <p>
+                    Applied data analysis techniques in research projects and practical applications,
+                    extracting meaningful insights and patterns from complex datasets.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 2,
+        name: "C++",
+        showNameOnButton: false,
+        category: "Programming Languages",
+        importance: "medium",
+        bgImage: '/images/cplus.png',
+        description: () => (
+            <>
+                <p>
+                    Working knowledge of C++ for performance-critical applications and algorithm implementation.
+                    Experience with STL, memory management, and object-oriented design in C++ environments.
+                </p>
+                <p>
+                    Applied C++ in computational geometry projects and optimization problems requiring
+                    high-performance computing solutions.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 3,
         name: "Java",
         showNameOnButton: false,
         category: "Programming Languages",
@@ -21,80 +60,9 @@ const projectData = [
             </>
         ),
     },
-    {
-        id: 2,
-        name: "JavaScript",
-        showNameOnButton: false,
-        category: "Programming Languages",
-        importance: "high",
-        bgImage: '/images/js.png',
-        description: () => (
-            <>
-                <p>
-                    Strong proficiency in JavaScript for both front-end and back-end development.
-                    Experienced with ES6+ features, asynchronous programming, and functional concepts.
-                </p>
-                <p>
-                    Developed interactive web applications and utilized JavaScript frameworks like React
-                    to create responsive user interfaces with efficient state management.
-                </p>
-            </>
-        ),
-        relatedProjects: [
-            {
-                label: "Portfolio website (React)",
-                skillId: 6
-            },
-            {
-                label: "SHELTER Game (React Native / Expo)",
-                skillId: 10
-            }
-        ]
-    },
-    {
-        id: 3,
-        name: "Python",
-        showNameOnButton: false,
-        category: "Programming Languages",
-        importance: "high",
-        bgImage: '/images/python.png',
-        description: () => (
-            <>
-                <p>
-                    Advanced Python programming skills applied to data analysis, machine learning, and
-                    algorithm development. Proficient with scientific libraries including NumPy, Pandas,
-                    and Matplotlib.
-                </p>
-                <p>
-                    Implemented machine learning models using scikit-learn and PyTorch, with a focus on
-                    optimization algorithms and computational geometry applications.
-                </p>
-            </>
-        ),
-    },
-    {
-        id: 4,
-        name: "C++",
-        showNameOnButton: false,
-        category: "Programming Languages",
-        importance: "medium",
-        bgImage: '/images/cplus.png',
-        description: () => (
-            <>
-                <p>
-                    Working knowledge of C++ for performance-critical applications and algorithm implementation.
-                    Experience with STL, memory management, and object-oriented design in C++ environments.
-                </p>
-                <p>
-                    Applied C++ in computational geometry projects and optimization problems requiring
-                    high-performance computing solutions.
-                </p>
-            </>
-        ),
-    },
 
     {
-        id: 5,
+        id: 4,
         name: "MATLAB",
         showNameOnButton: true,
         category: "Programming Languages",
@@ -140,8 +108,50 @@ const projectData = [
             </>
         ),
     },
-
-    // Frameworks & Libraries
+    {
+        id: 5,
+        name: "React Native/Expo",
+        showNameOnButton: false,
+        category: "Frameworks & Libraries",
+        importance: "small",
+        videoOrientation: "vertical",
+        videos: [
+            "/ShelterGameplay/ShelterGameplay.MP4"
+        ],
+        bgImage: '/images/expo.png',
+        description: () => (
+            <>
+                <p>
+                    SHELTER is a mobile adaptation of a strategic board game where players receive a random set of cards
+                    representing traits such as gender, age, and profession. The objective is to persuade others that your
+                    character’s attributes enhance survival chances in a bunker scenario.
+                </p>
+                <p>
+                    This project was my first foray into iOS app development, leveraging the React Native framework alongside
+                    the Expo ecosystem. It served as a comprehensive exercise in mobile development, producing a polished and
+                    engaging game experience tailored for friends and casual players.
+                </p>
+                <h4>Technical Skills Applied:</h4>
+                <ul className="shelter">
+                    <li><strong>React Native Framework:</strong> Developed a native-like user interface utilizing React’s
+                        component-based architecture, ensuring responsiveness and smooth interaction on iOS devices.</li>
+                    <li><strong>Expo Ecosystem:</strong> Streamlined app development with Expo’s managed workflow, simplifying
+                        native code handling and focusing development on JavaScript.</li>
+                    <li><strong>Responsive Design:</strong> Implemented adaptive layouts and styling for optimal display across
+                        screen sizes and orientations.</li>
+                    <li><strong>Navigation & UI Components:</strong> Employed React Navigation for structured app flow and
+                        utilized core React Native components for consistent UI aesthetics.</li>
+                </ul>
+                <a
+                    href="https://github.com/Olga-Gol/ShelterGame"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View project on GitHub
+                </a>
+            </>
+        ),
+    },
     {
         id: 6,
         name: "React",
@@ -192,175 +202,59 @@ const projectData = [
             </>
         ),
     },
-
     {
         id: 7,
-        name: "Next.js",
+        name: "JavaScript",
         showNameOnButton: false,
-        category: "Frameworks & Libraries",
-        importance: "medium",
-        bgImage: '/images/next.jpg',
+        category: "Programming Languages",
+        importance: "high",
+        bgImage: '/images/js.png',
         description: () => (
             <>
                 <p>
-                    Experience with Next.js for server-side rendering and creating optimized React applications.
-                    Implemented routing, API routes, and static site generation features.
+                    Strong proficiency in JavaScript for both front-end and back-end development.
+                    Experienced with ES6+ features, asynchronous programming, and functional concepts.
                 </p>
                 <p>
-                    Built performance-focused web applications leveraging Next.js's hybrid rendering capabilities
-                    and optimization features.
+                    Developed interactive web applications and utilized JavaScript frameworks like React
+                    to create responsive user interfaces with efficient state management.
                 </p>
             </>
         ),
+        relatedProjects: [
+            {
+                label: "Portfolio website (React)",
+                skillId: 6
+            },
+            {
+                label: "SHELTER Game (React Native / Expo)",
+                skillId: 10
+            }
+        ]
     },
     {
         id: 8,
-        name: "Node.js",
+        name: "Python",
         showNameOnButton: false,
-        category: "Frameworks & Libraries",
-        importance: "medium",
-        bgImage: '/images/node.png',
+        category: "Programming Languages",
+        importance: "high",
+        bgImage: '/images/python.png',
         description: () => (
             <>
                 <p>
-                    Proficient in server-side JavaScript development using Node.js for creating APIs and
-                    backend services. Experience with Express.js, middleware patterns, and database integration.
+                    Advanced Python programming skills applied to data analysis, machine learning, and
+                    algorithm development. Proficient with scientific libraries including NumPy, Pandas,
+                    and Matplotlib.
                 </p>
                 <p>
-                    Developed RESTful APIs and implemented authentication, data validation, and error handling
-                    for web applications.
+                    Implemented machine learning models using scikit-learn and PyTorch, with a focus on
+                    optimization algorithms and computational geometry applications.
                 </p>
             </>
         ),
     },
     {
         id: 9,
-        name: "PyTorch",
-        showNameOnButton: false,
-        category: "Frameworks & Libraries",
-        importance: "small",
-        bgImage: '/images/pytorch.png',
-        description: () => (
-            <>
-                <p>
-                    Advanced experience in deep learning model development using PyTorch. Implemented neural
-                    networks for various applications including computer vision and optimization tasks.
-                </p>
-                <p>
-                    Designed custom loss functions, training loops, and optimization strategies for specialized
-                    machine learning applications.
-                </p>
-            </>
-        ),
-    },
-    {
-        id: 10,
-        name: "TensorFlow",
-        showNameOnButton: false,
-        category: "Frameworks & Libraries",
-        importance: "medium",
-        bgImage: '/images/tensor.png',
-        description: () => (
-            <>
-                <div className="tensorflow">
-                    <p>
-                        Proficient in TensorFlow for building, training, and deploying neural network models with strong focus on
-                        model evaluation and production readiness.
-                    </p>
-
-                    <p>
-                        Applied TensorFlow to develop a neural network that predicts phishing websites based on URLs, achieving 96.61%
-                        test accuracy.
-                    </p>
-                    <a
-                        href="https://github.com/Olga-Gol/PhishingWebsitesML/blob/main/ML%20models/NeuralNetwork.ipynb"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{ fontWeight: 'bold' }}
-                    >
-                        View project on GitHub
-                    </a>
-                </div>
-            </>
-        ),
-    },
-
-    {
-        id: 11,
-        name: "React Native/Expo",
-        showNameOnButton: false,
-        category: "Frameworks & Libraries",
-        importance: "small",
-        videoOrientation: "vertical",
-        videos: [
-            "/ShelterGameplay/ShelterGameplay.MP4"
-        ],
-        bgImage: '/images/expo.png',
-        description: () => (
-            <>
-                <p>
-                    SHELTER is a mobile adaptation of a strategic board game where players receive a random set of cards
-                    representing traits such as gender, age, and profession. The objective is to persuade others that your
-                    character’s attributes enhance survival chances in a bunker scenario.
-                </p>
-                <p>
-                    This project was my first foray into iOS app development, leveraging the React Native framework alongside
-                    the Expo ecosystem. It served as a comprehensive exercise in mobile development, producing a polished and
-                    engaging game experience tailored for friends and casual players.
-                </p>
-                <h4>Technical Skills Applied:</h4>
-                <ul className="shelter">
-                    <li><strong>React Native Framework:</strong> Developed a native-like user interface utilizing React’s
-                        component-based architecture, ensuring responsiveness and smooth interaction on iOS devices.</li>
-                    <li><strong>Expo Ecosystem:</strong> Streamlined app development with Expo’s managed workflow, simplifying
-                        native code handling and focusing development on JavaScript.</li>
-                    <li><strong>Responsive Design:</strong> Implemented adaptive layouts and styling for optimal display across
-                        screen sizes and orientations.</li>
-                    <li><strong>Navigation & UI Components:</strong> Employed React Navigation for structured app flow and
-                        utilized core React Native components for consistent UI aesthetics.</li>
-                </ul>
-                <a
-                    href="https://github.com/Olga-Gol/ShelterGame"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    View project on GitHub
-                </a>
-            </>
-        ),
-    },
-    {
-        id: 12,
-        name: "Spring",
-        showNameOnButton: false,
-        category: "Frameworks & Libraries",
-        importance: "small",
-        bgImage: '/images/spring.png',
-        description: () => (
-            <>
-                <div className="tensorflow">
-                    <p>
-                       Spring
-                    </p>
-                    <p>
-                        
-                    </p>
-                    <a
-                        href="https://github.com/Olga-Gol/PhishingWebsitesML/blob/main/ML%20models/NeuralNetwork.ipynb"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{ fontWeight: 'bold' }}
-                    >
-                        View project on GitHub
-                    </a>
-                </div>
-            </>
-        ),
-    },
-
-    // Technical Fields
-    {
-        id: 13,
         name: "Computational Geometry",
         showNameOnButton: true,
         category: "Technical Fields",
@@ -407,7 +301,59 @@ const projectData = [
         ),
     },
     {
-        id: 14,
+        id: 10,
+        name: "Next.js",
+        showNameOnButton: false,
+        category: "Frameworks & Libraries",
+        importance: "medium",
+        bgImage: '/images/next.jpg',
+        description: () => (
+            <>
+                <p>
+                    Experience with Next.js for server-side rendering and creating optimized React applications.
+                    Implemented routing, API routes, and static site generation features.
+                </p>
+                <p>
+                    Built performance-focused web applications leveraging Next.js's hybrid rendering capabilities
+                    and optimization features.
+                </p>
+            </>
+        ),
+    },
+
+    {
+        id: 11,
+        name: "TensorFlow",
+        showNameOnButton: false,
+        category: "Frameworks & Libraries",
+        importance: "medium",
+        bgImage: '/images/tensor.png',
+        description: () => (
+            <>
+                <div className="tensorflow">
+                    <p>
+                        Proficient in TensorFlow for building, training, and deploying neural network models with strong focus on
+                        model evaluation and production readiness.
+                    </p>
+
+                    <p>
+                        Applied TensorFlow to develop a neural network that predicts phishing websites based on URLs, achieving 96.61%
+                        test accuracy.
+                    </p>
+                    <a
+                        href="https://github.com/Olga-Gol/PhishingWebsitesML/blob/main/ML%20models/NeuralNetwork.ipynb"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ fontWeight: 'bold' }}
+                    >
+                        View project on GitHub
+                    </a>
+                </div>
+            </>
+        ),
+    },    
+    {
+        id: 12,
         name: "Machine Learning",
         showNameOnButton: true,
         category: "Technical Fields",
@@ -430,7 +376,7 @@ const projectData = [
         ),
     },
     {
-        id: 15,
+        id: 13,
         name: "Optimization",
         showNameOnButton: true,
         category: "Technical Fields",
@@ -475,7 +421,7 @@ const projectData = [
         ),
     },
     {
-        id: 16,
+        id: 14,
         name: "Algorithms",
         showNameOnButton: true,
         category: "Technical Fields",
@@ -494,10 +440,28 @@ const projectData = [
             </>
         ),
     },
-
-    // Additional Skills
     {
-        id: 17,
+        id: 15,
+        name: "PyTorch",
+        showNameOnButton: false,
+        category: "Frameworks & Libraries",
+        importance: "small",
+        bgImage: '/images/pytorch.png',
+        description: () => (
+            <>
+                <p>
+                    Advanced experience in deep learning model development using PyTorch. Implemented neural
+                    networks for various applications including computer vision and optimization tasks.
+                </p>
+                <p>
+                    Designed custom loss functions, training loops, and optimization strategies for specialized
+                    machine learning applications.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 16,
         name: "Publications",
         showNameOnButton: true,
         category: "Additional Skills",
@@ -558,7 +522,55 @@ const projectData = [
         ),
     },
     {
+        id: 17,
+        name: "Node.js",
+        showNameOnButton: false,
+        category: "Frameworks & Libraries",
+        importance: "medium",
+        bgImage: '/images/node.png',
+        description: () => (
+            <>
+                <p>
+                    Proficient in server-side JavaScript development using Node.js for creating APIs and
+                    backend services. Experience with Express.js, middleware patterns, and database integration.
+                </p>
+                <p>
+                    Developed RESTful APIs and implemented authentication, data validation, and error handling
+                    for web applications.
+                </p>
+            </>
+        ),
+    },
+    {
         id: 18,
+        name: "Spring",
+        showNameOnButton: false,
+        category: "Frameworks & Libraries",
+        importance: "small",
+        bgImage: '/images/spring.png',
+        description: () => (
+            <>
+                <div className="tensorflow">
+                    <p>
+                       Spring
+                    </p>
+                    <p>
+                        
+                    </p>
+                    <a
+                        href="https://github.com/Olga-Gol/PhishingWebsitesML/blob/main/ML%20models/NeuralNetwork.ipynb"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ fontWeight: 'bold' }}
+                    >
+                        View project on GitHub
+                    </a>
+                </div>
+            </>
+        ),
+    },
+    {
+        id: 19,
         name: "Web Development",
         showNameOnButton: true,
         category: "Additional Skills",
@@ -578,26 +590,7 @@ const projectData = [
             </>
         ),
     },
-    {
-        id: 19,
-        name: "Data Analysis",
-        showNameOnButton: true,
-        category: "Additional Skills",
-        importance: "small",
-        bgImage: '/images/data.png',
-        description: () => (
-            <>
-                <p>
-                    Strong data analysis capabilities using Python and specialized libraries. Experience
-                    with data cleaning, exploratory analysis, visualization, and statistical methods.
-                </p>
-                <p>
-                    Applied data analysis techniques in research projects and practical applications,
-                    extracting meaningful insights and patterns from complex datasets.
-                </p>
-            </>
-        ),
-    }
+    
 ];
 
 export default projectData;
