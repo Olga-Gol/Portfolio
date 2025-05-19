@@ -2,10 +2,10 @@ const skillData = [
     // Programming Languages
     {
         id: 1,
-        name: "Java",
+        name: "",
         category: "Programming Languages",
         importance: "high",
-        imgSrc: "/skills/java.jpg",
+        bgImage: '/images/java.png',
         description: () => (
             <>
                 <p>
@@ -22,10 +22,10 @@ const skillData = [
     },
     {
         id: 2,
-        name: "JavaScript",
+        name: "",
         category: "Programming Languages",
         importance: "high",
-        imgSrc: "/skills/javascript.jpg",
+        bgImage: '/images/js.png',
         description: () => (
             <>
                 <p>
@@ -94,6 +94,7 @@ const skillData = [
         name: "MATLAB",
         category: "Programming Languages",
         importance: "medium",
+        bgImage: '/images/matlab.png',
         description: () => (
             <>
                 <div className="matlab">
@@ -245,9 +246,10 @@ const skillData = [
     },
     {
         id: 10,
-        name: "TensorFlow",
+        name: "",
         category: "Frameworks & Libraries",
         importance: "medium",
+        bgImage: '/images/tensor.png',
         description: () => (
             <>
                 <div className="tensorflow">
@@ -275,13 +277,14 @@ const skillData = [
 
     {
         id: 11,
-        name: "React Native/Expo",
+        name: "",
         category: "Frameworks & Libraries",
         importance: "medium",
         videoOrientation: "vertical",
         videos: [
             "/ShelterGameplay/ShelterGameplay.MP4"
         ],
+        bgImage: '/images/expo.png',
         description: () => (
             <>
                 <p>
@@ -327,6 +330,7 @@ const skillData = [
             "/videos/hilbert2.mp4",
             "/videos/hilbert3.mp4"
         ],
+        bgImage: '/images/compgeo.gif',
         description: () => (
             <div>
                 <p>
@@ -367,7 +371,7 @@ const skillData = [
         name: "Machine Learning",
         category: "Technical Fields",
         importance: "high",
-        imgSrc: "/skills/machine-learning.jpg",
+        bgImage: '/images/ml.jpg',
         description: () => (
             <>
                 <p>
@@ -453,6 +457,7 @@ const skillData = [
         name: "Publications",
         category: "Additional Skills",
         importance: "medium",
+        bgImage: '/images/publications.jpg',
         description: () => (
             <>
                 <div className="publications-grid">
