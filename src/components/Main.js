@@ -26,6 +26,9 @@ const Main = () => {
 
     return (
         <div id="main" className="main-container">
+
+            <h2 className="main-header">PROJECTS</h2>
+
             <div className="skills-cloud">
                 {projectData.map((skill) => {
                     // Determine button size based on importance level

@@ -8,6 +8,15 @@
     align-items: center;
 }
 
+.main-header {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 10px; 
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+  }
+
 .skills-cloud {
     display: flex;
     flex-wrap: wrap;
