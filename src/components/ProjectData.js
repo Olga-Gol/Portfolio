@@ -60,9 +60,38 @@ const projectData = [
             </>
         ),
     },
-
     {
         id: 4,
+        name: "JavaScript",
+        showNameOnButton: false,
+        category: "Programming Languages",
+        importance: "high",
+        bgImage: '/images/js.png',
+        description: () => (
+            <>
+                <p>
+                    Strong proficiency in JavaScript for both front-end and back-end development.
+                    Experienced with ES6+ features, asynchronous programming, and functional concepts.
+                </p>
+                <p>
+                    Developed interactive web applications and utilized JavaScript frameworks like React
+                    to create responsive user interfaces with efficient state management.
+                </p>
+            </>
+        ),
+        relatedProjects: [
+            {
+                label: "Portfolio website (React)",
+                skillId: 6
+            },
+            {
+                label: "SHELTER Game (React Native / Expo)",
+                skillId: 10
+            }
+        ]
+    },
+    {
+        id: 5,
         name: "MATLAB",
         showNameOnButton: true,
         category: "Programming Languages",
@@ -109,7 +138,7 @@ const projectData = [
         ),
     },
     {
-        id: 5,
+        id: 6,
         name: "React Native/Expo",
         showNameOnButton: false,
         category: "Frameworks & Libraries",
@@ -153,7 +182,7 @@ const projectData = [
         ),
     },
     {
-        id: 6,
+        id: 7,
         name: "React",
         showNameOnButton: true,
         category: "Frameworks & Libraries",
@@ -201,37 +230,7 @@ const projectData = [
                 </div>
             </>
         ),
-    },
-    {
-        id: 7,
-        name: "JavaScript",
-        showNameOnButton: false,
-        category: "Programming Languages",
-        importance: "high",
-        bgImage: '/images/js.png',
-        description: () => (
-            <>
-                <p>
-                    Strong proficiency in JavaScript for both front-end and back-end development.
-                    Experienced with ES6+ features, asynchronous programming, and functional concepts.
-                </p>
-                <p>
-                    Developed interactive web applications and utilized JavaScript frameworks like React
-                    to create responsive user interfaces with efficient state management.
-                </p>
-            </>
-        ),
-        relatedProjects: [
-            {
-                label: "Portfolio website (React)",
-                skillId: 6
-            },
-            {
-                label: "SHELTER Game (React Native / Expo)",
-                skillId: 10
-            }
-        ]
-    },
+    }, 
     {
         id: 8,
         name: "Python",
@@ -302,6 +301,29 @@ const projectData = [
     },
     {
         id: 10,
+        name: "Machine Learning",
+        showNameOnButton: true,
+        category: "Technical Fields",
+        importance: "high",
+        bgImage: '/images/ml.jpg',
+        description: () => (
+            <>
+                <p>
+                    Comprehensive understanding of machine learning principles, algorithms, and applications.
+                    Experience with supervised and unsupervised learning, model evaluation, and feature engineering.
+                </p>
+                <p>
+                    Developed and deployed machine learning solutions for classification, regression, clustering,
+                    and optimization problems across various domains.
+                </p>
+                <p>
+                    Familiar with key algorithms including decision trees, linear regression, and neural networks.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 11,
         name: "Next.js",
         showNameOnButton: false,
         category: "Frameworks & Libraries",
@@ -320,9 +342,8 @@ const projectData = [
             </>
         ),
     },
-
     {
-        id: 11,
+        id: 12,
         name: "TensorFlow",
         showNameOnButton: false,
         category: "Frameworks & Libraries",
@@ -352,29 +373,6 @@ const projectData = [
             </>
         ),
     },    
-    {
-        id: 12,
-        name: "Machine Learning",
-        showNameOnButton: true,
-        category: "Technical Fields",
-        importance: "high",
-        bgImage: '/images/ml.jpg',
-        description: () => (
-            <>
-                <p>
-                    Comprehensive understanding of machine learning principles, algorithms, and applications.
-                    Experience with supervised and unsupervised learning, model evaluation, and feature engineering.
-                </p>
-                <p>
-                    Developed and deployed machine learning solutions for classification, regression, clustering,
-                    and optimization problems across various domains.
-                </p>
-                <p>
-                    Familiar with key algorithms including decision trees, linear regression, and neural networks.
-                </p>
-            </>
-        ),
-    },
     {
         id: 13,
         name: "Optimization",
@@ -422,50 +420,10 @@ const projectData = [
     },
     {
         id: 14,
-        name: "Algorithms",
-        showNameOnButton: true,
-        category: "Technical Fields",
-        importance: "medium",
-        bgImage: '/images/algo.jpg',
-        description: () => (
-            <>
-                <p>
-                    Advanced knowledge of algorithmic design, analysis, and implementation. Expertise in data
-                    structures, complexity analysis, and algorithm optimization.
-                </p>
-                <p>
-                    Implemented efficient solutions for complex computational problems, with a focus on
-                    time and space complexity optimization.
-                </p>
-            </>
-        ),
-    },
-    {
-        id: 15,
-        name: "PyTorch",
-        showNameOnButton: false,
-        category: "Frameworks & Libraries",
-        importance: "small",
-        bgImage: '/images/pytorch.png',
-        description: () => (
-            <>
-                <p>
-                    Advanced experience in deep learning model development using PyTorch. Implemented neural
-                    networks for various applications including computer vision and optimization tasks.
-                </p>
-                <p>
-                    Designed custom loss functions, training loops, and optimization strategies for specialized
-                    machine learning applications.
-                </p>
-            </>
-        ),
-    },
-    {
-        id: 16,
         name: "Publications",
         showNameOnButton: true,
         category: "Additional Skills",
-        importance: "medium",
+        importance: "high",
         bgImage: '/images/publications.jpg',
         description: () => (
             <>
@@ -522,7 +480,27 @@ const projectData = [
         ),
     },
     {
-        id: 17,
+        id: 15,
+        name: "Algorithms",
+        showNameOnButton: true,
+        category: "Technical Fields",
+        importance: "high",
+        bgImage: '/images/algo.jpg',
+        description: () => (
+            <>
+                <p>
+                    Advanced knowledge of algorithmic design, analysis, and implementation. Expertise in data
+                    structures, complexity analysis, and algorithm optimization.
+                </p>
+                <p>
+                    Implemented efficient solutions for complex computational problems, with a focus on
+                    time and space complexity optimization.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 16,
         name: "Node.js",
         showNameOnButton: false,
         category: "Frameworks & Libraries",
@@ -542,11 +520,31 @@ const projectData = [
         ),
     },
     {
+        id: 17,
+        name: "PyTorch",
+        showNameOnButton: false,
+        category: "Frameworks & Libraries",
+        importance: "small",
+        bgImage: '/images/pytorch.png',
+        description: () => (
+            <>
+                <p>
+                    Advanced experience in deep learning model development using PyTorch. Implemented neural
+                    networks for various applications including computer vision and optimization tasks.
+                </p>
+                <p>
+                    Designed custom loss functions, training loops, and optimization strategies for specialized
+                    machine learning applications.
+                </p>
+            </>
+        ),
+    },
+    {
         id: 18,
         name: "Spring",
         showNameOnButton: false,
         category: "Frameworks & Libraries",
-        importance: "small",
+        importance: "medium",
         bgImage: '/images/spring.png',
         description: () => (
             <>
