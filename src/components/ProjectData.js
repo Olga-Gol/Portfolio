@@ -62,36 +62,6 @@ const projectData = [
     },
     {
         id: 4,
-        name: "JavaScript",
-        showNameOnButton: false,
-        category: "Programming Languages",
-        importance: "high",
-        bgImage: '/images/js.png',
-        description: () => (
-            <>
-                <p>
-                    Strong proficiency in JavaScript for both front-end and back-end development.
-                    Experienced with ES6+ features, asynchronous programming, and functional concepts.
-                </p>
-                <p>
-                    Developed interactive web applications and utilized JavaScript frameworks like React
-                    to create responsive user interfaces with efficient state management.
-                </p>
-            </>
-        ),
-        relatedProjects: [
-            {
-                label: "Portfolio website (React)",
-                skillId: 6
-            },
-            {
-                label: "SHELTER Game (React Native / Expo)",
-                skillId: 10
-            }
-        ]
-    },
-    {
-        id: 5,
         name: "MATLAB",
         showNameOnButton: true,
         category: "Programming Languages",
@@ -138,7 +108,7 @@ const projectData = [
         ),
     },
     {
-        id: 6,
+        id: 5,
         name: "React Native/Expo",
         showNameOnButton: false,
         category: "Frameworks & Libraries",
@@ -182,7 +152,7 @@ const projectData = [
         ),
     },
     {
-        id: 7,
+        id: 6,
         name: "React",
         showNameOnButton: true,
         category: "Frameworks & Libraries",
@@ -232,6 +202,36 @@ const projectData = [
         ),
     }, 
     {
+        id: 7,
+        name: "JavaScript",
+        showNameOnButton: false,
+        category: "Programming Languages",
+        importance: "high",
+        bgImage: '/images/js.png',
+        description: () => (
+            <>
+                <p>
+                    Strong proficiency in JavaScript for both front-end and back-end development.
+                    Experienced with ES6+ features, asynchronous programming, and functional concepts.
+                </p>
+                <p>
+                    Developed interactive web applications and utilized JavaScript frameworks like React
+                    to create responsive user interfaces with efficient state management.
+                </p>
+            </>
+        ),
+        relatedProjects: [
+            {
+                label: "Portfolio website (React)",
+                skillId: 6
+            },
+            {
+                label: "SHELTER Game (React Native / Expo)",
+                skillId: 10
+            }
+        ]
+    },   
+    {
         id: 8,
         name: "Python",
         showNameOnButton: false,
@@ -254,6 +254,98 @@ const projectData = [
     },
     {
         id: 9,
+        name: "Next.js",
+        showNameOnButton: false,
+        category: "Frameworks & Libraries",
+        importance: "medium",
+        bgImage: '/images/next.jpg',
+        description: () => (
+            <>
+                <p>
+                    Experience with Next.js for server-side rendering and creating optimized React applications.
+                    Implemented routing, API routes, and static site generation features.
+                </p>
+                <p>
+                    Built performance-focused web applications leveraging Next.js's hybrid rendering capabilities
+                    and optimization features.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 10,
+        name: "PyTorch",
+        showNameOnButton: false,
+        category: "Frameworks & Libraries",
+        importance: "small",
+        bgImage: '/images/pytorch.png',
+        description: () => (
+            <>
+                <p>
+                    Advanced experience in deep learning model development using PyTorch. Implemented neural
+                    networks for various applications including computer vision and optimization tasks.
+                </p>
+                <p>
+                    Designed custom loss functions, training loops, and optimization strategies for specialized
+                    machine learning applications.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 11,
+        name: "Web Development",
+        showNameOnButton: true,
+        category: "Additional Skills",
+        importance: "small",
+        bgImage: '/images/web.jpeg',
+        description: () => (
+            <>
+                <p>
+                    Full-stack web development skills covering front-end design, back-end implementation,
+                    and database integration. Experience with responsive design, accessibility, and modern
+                    web technologies.
+                </p>
+                <p>
+                    Built interactive web applications using React, Next.js, and Node.js with a focus on
+                    performance optimization and user experience.
+                </p>
+            </>
+        ),
+    },
+    {
+        id: 12,
+        name: "TensorFlow",
+        showNameOnButton: false,
+        category: "Frameworks & Libraries",
+        importance: "medium",
+        bgImage: '/images/tensor.png',
+        description: () => (
+            <>
+                <div className="tensorflow">
+                    <p>
+                        Proficient in TensorFlow for building, training, and deploying neural network models with strong focus on
+                        model evaluation and production readiness.
+                    </p>
+
+                    <p>
+                        Applied TensorFlow to develop a neural network that predicts phishing websites based on URLs, achieving 96.61%
+                        test accuracy.
+                    </p>
+                    <a
+                        href="https://github.com/Olga-Gol/PhishingWebsitesML/blob/main/ML%20models/NeuralNetwork.ipynb"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ fontWeight: 'bold' }}
+                    >
+                        View project on GitHub
+                    </a>
+                </div>
+            </>
+        ),
+    },  
+    {
+        id: 13,
         name: "Computational Geometry",
         showNameOnButton: true,
         category: "Technical Fields",
@@ -300,7 +392,7 @@ const projectData = [
         ),
     },
     {
-        id: 10,
+        id: 14,
         name: "Machine Learning",
         showNameOnButton: true,
         category: "Technical Fields",
@@ -321,45 +413,42 @@ const projectData = [
                 </p>
             </>
         ),
-    },
+    },  
     {
-        id: 11,
-        name: "Next.js",
+        id: 15,
+        name: "Node.js",
         showNameOnButton: false,
         category: "Frameworks & Libraries",
         importance: "medium",
-        bgImage: '/images/next.jpg',
+        bgImage: '/images/node.png',
         description: () => (
             <>
                 <p>
-                    Experience with Next.js for server-side rendering and creating optimized React applications.
-                    Implemented routing, API routes, and static site generation features.
+                    Proficient in server-side JavaScript development using Node.js for creating APIs and
+                    backend services. Experience with Express.js, middleware patterns, and database integration.
                 </p>
                 <p>
-                    Built performance-focused web applications leveraging Next.js's hybrid rendering capabilities
-                    and optimization features.
+                    Developed RESTful APIs and implemented authentication, data validation, and error handling
+                    for web applications.
                 </p>
             </>
         ),
     },
     {
-        id: 12,
-        name: "TensorFlow",
+        id: 16,
+        name: "Spring",
         showNameOnButton: false,
         category: "Frameworks & Libraries",
         importance: "medium",
-        bgImage: '/images/tensor.png',
+        bgImage: '/images/spring.png',
         description: () => (
             <>
                 <div className="tensorflow">
                     <p>
-                        Proficient in TensorFlow for building, training, and deploying neural network models with strong focus on
-                        model evaluation and production readiness.
+                       Spring
                     </p>
-
                     <p>
-                        Applied TensorFlow to develop a neural network that predicts phishing websites based on URLs, achieving 96.61%
-                        test accuracy.
+                        
                     </p>
                     <a
                         href="https://github.com/Olga-Gol/PhishingWebsitesML/blob/main/ML%20models/NeuralNetwork.ipynb"
@@ -372,9 +461,9 @@ const projectData = [
                 </div>
             </>
         ),
-    },    
+    },
     {
-        id: 13,
+        id: 17,
         name: "Optimization",
         showNameOnButton: true,
         category: "Technical Fields",
@@ -419,7 +508,7 @@ const projectData = [
         ),
     },
     {
-        id: 14,
+        id: 18,
         name: "Publications",
         showNameOnButton: true,
         category: "Additional Skills",
@@ -480,7 +569,7 @@ const projectData = [
         ),
     },
     {
-        id: 15,
+        id: 19,
         name: "Algorithms",
         showNameOnButton: true,
         category: "Technical Fields",
@@ -495,95 +584,6 @@ const projectData = [
                 <p>
                     Implemented efficient solutions for complex computational problems, with a focus on
                     time and space complexity optimization.
-                </p>
-            </>
-        ),
-    },
-    {
-        id: 16,
-        name: "Node.js",
-        showNameOnButton: false,
-        category: "Frameworks & Libraries",
-        importance: "medium",
-        bgImage: '/images/node.png',
-        description: () => (
-            <>
-                <p>
-                    Proficient in server-side JavaScript development using Node.js for creating APIs and
-                    backend services. Experience with Express.js, middleware patterns, and database integration.
-                </p>
-                <p>
-                    Developed RESTful APIs and implemented authentication, data validation, and error handling
-                    for web applications.
-                </p>
-            </>
-        ),
-    },
-    {
-        id: 17,
-        name: "PyTorch",
-        showNameOnButton: false,
-        category: "Frameworks & Libraries",
-        importance: "small",
-        bgImage: '/images/pytorch.png',
-        description: () => (
-            <>
-                <p>
-                    Advanced experience in deep learning model development using PyTorch. Implemented neural
-                    networks for various applications including computer vision and optimization tasks.
-                </p>
-                <p>
-                    Designed custom loss functions, training loops, and optimization strategies for specialized
-                    machine learning applications.
-                </p>
-            </>
-        ),
-    },
-    {
-        id: 18,
-        name: "Spring",
-        showNameOnButton: false,
-        category: "Frameworks & Libraries",
-        importance: "medium",
-        bgImage: '/images/spring.png',
-        description: () => (
-            <>
-                <div className="tensorflow">
-                    <p>
-                       Spring
-                    </p>
-                    <p>
-                        
-                    </p>
-                    <a
-                        href="https://github.com/Olga-Gol/PhishingWebsitesML/blob/main/ML%20models/NeuralNetwork.ipynb"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        style={{ fontWeight: 'bold' }}
-                    >
-                        View project on GitHub
-                    </a>
-                </div>
-            </>
-        ),
-    },
-    {
-        id: 19,
-        name: "Web Development",
-        showNameOnButton: true,
-        category: "Additional Skills",
-        importance: "small",
-        bgImage: '/images/web.jpeg',
-        description: () => (
-            <>
-                <p>
-                    Full-stack web development skills covering front-end design, back-end implementation,
-                    and database integration. Experience with responsive design, accessibility, and modern
-                    web technologies.
-                </p>
-                <p>
-                    Built interactive web applications using React, Next.js, and Node.js with a focus on
-                    performance optimization and user experience.
                 </p>
             </>
         ),
