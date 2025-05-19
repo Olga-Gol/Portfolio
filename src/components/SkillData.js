@@ -2,7 +2,8 @@ const skillData = [
     // Programming Languages
     {
         id: 1,
-        name: "",
+        name: "Java",
+        showNameOnButton: false,
         category: "Programming Languages",
         importance: "high",
         bgImage: '/images/java.png',
@@ -22,7 +23,8 @@ const skillData = [
     },
     {
         id: 2,
-        name: "",
+        name: "JavaScript",
+        showNameOnButton: false,
         category: "Programming Languages",
         importance: "high",
         bgImage: '/images/js.png',
@@ -51,7 +53,8 @@ const skillData = [
     },
     {
         id: 3,
-        name: "",
+        name: "Python",
+        showNameOnButton: false,
         category: "Programming Languages",
         importance: "high",
         bgImage: '/images/python.png',
@@ -72,6 +75,7 @@ const skillData = [
     {
         id: 4,
         name: "C++",
+        showNameOnButton: true,
         category: "Programming Languages",
         importance: "medium",
         imgSrc: "/skills/cpp.jpg",
@@ -92,6 +96,7 @@ const skillData = [
     {
         id: 5,
         name: "MATLAB",
+        showNameOnButton: true,
         category: "Programming Languages",
         importance: "medium",
         bgImage: '/images/matlab.png',
@@ -139,10 +144,11 @@ const skillData = [
     // Frameworks & Libraries
     {
         id: 6,
-        name: "",
+        name: "React",
+        showNameOnButton: true,
         category: "Frameworks & Libraries",
         importance: "high",
-        bgImage: '/images/react.jpg',
+        bgImage: '/images/react.png',
         description: () => (
             <>
                 <div className="portfolio">
@@ -189,7 +195,8 @@ const skillData = [
 
     {
         id: 7,
-        name: "",
+        name: "Next.js",
+        showNameOnButton: false,
         category: "Frameworks & Libraries",
         importance: "medium",
         bgImage: '/images/next.jpg',
@@ -208,7 +215,8 @@ const skillData = [
     },
     {
         id: 8,
-        name: "",
+        name: "Node.js",
+        showNameOnButton: false,
         category: "Frameworks & Libraries",
         importance: "medium",
         bgImage: '/images/node.png',
@@ -228,6 +236,7 @@ const skillData = [
     {
         id: 9,
         name: "PyTorch",
+        showNameOnButton: true,
         category: "Frameworks & Libraries",
         importance: "high",
         imgSrc: "/skills/pytorch.jpg",
@@ -246,7 +255,8 @@ const skillData = [
     },
     {
         id: 10,
-        name: "",
+        name: "TensorFlow",
+        showNameOnButton: false,
         category: "Frameworks & Libraries",
         importance: "medium",
         bgImage: '/images/tensor.png',
@@ -277,9 +287,10 @@ const skillData = [
 
     {
         id: 11,
-        name: "",
+        name: "React Native/Expo",
+        showNameOnButton: false,
         category: "Frameworks & Libraries",
-        importance: "medium",
+        importance: "small",
         videoOrientation: "vertical",
         videos: [
             "/ShelterGameplay/ShelterGameplay.MP4"
@@ -320,7 +331,8 @@ const skillData = [
     },
     {
         id: 12,
-        name: "",
+        name: "Spring Boot",
+        showNameOnButton: false,
         category: "Frameworks & Libraries",
         importance: "medium",
         bgImage: '/images/spring.png',
@@ -350,6 +362,7 @@ const skillData = [
     {
         id: 13,
         name: "Computational Geometry",
+        showNameOnButton: true,
         category: "Technical Fields",
         importance: "high",
         videos: [
@@ -396,6 +409,7 @@ const skillData = [
     {
         id: 14,
         name: "Machine Learning",
+        showNameOnButton: true,
         category: "Technical Fields",
         importance: "high",
         bgImage: '/images/ml.jpg',
@@ -418,6 +432,7 @@ const skillData = [
     {
         id: 15,
         name: "Optimization",
+        showNameOnButton: true,
         category: "Technical Fields",
         importance: "high",
         bgImage: '/images/opt.jpg',
@@ -462,6 +477,7 @@ const skillData = [
     {
         id: 16,
         name: "Algorithms",
+        showNameOnButton: true,
         category: "Technical Fields",
         importance: "high",
         imgSrc: "/skills/algorithms.jpg",
@@ -483,6 +499,7 @@ const skillData = [
     {
         id: 17,
         name: "Publications",
+        showNameOnButton: true,
         category: "Additional Skills",
         importance: "medium",
         bgImage: '/images/publications.jpg',
@@ -543,6 +560,7 @@ const skillData = [
     {
         id: 18,
         name: "Web Development",
+        showNameOnButton: true,
         category: "Additional Skills",
         importance: "medium",
         imgSrc: "/skills/web-development.jpg",
@@ -563,6 +581,7 @@ const skillData = [
     {
         id: 19,
         name: "Mobile Development",
+        showNameOnButton: true,
         category: "Additional Skills",
         importance: "small",
         imgSrc: "/skills/mobile-development.jpg",
@@ -582,6 +601,7 @@ const skillData = [
     {
         id: 20,
         name: "Data Analysis",
+        showNameOnButton: true,
         category: "Additional Skills",
         importance: "medium",
         imgSrc: "/skills/data-analysis.jpg",

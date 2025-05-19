@@ -42,7 +42,7 @@ const Main = () => {
                             onClick={() => handleSkillClick(skill)}
                             style={skill.bgImage ? { backgroundImage: `url(${skill.bgImage})` } : {}}
                         >
-                            {skill.name}
+                            {skill.showNameOnButton && skill.name}
                         </button>
                     );
                 })}
