@@ -139,7 +139,7 @@ const skillData = [
     // Frameworks & Libraries
     {
         id: 6,
-        name: "React",
+        name: "",
         category: "Frameworks & Libraries",
         importance: "high",
         bgImage: '/images/react.jpg',
@@ -420,6 +420,7 @@ const skillData = [
         name: "Optimization",
         category: "Technical Fields",
         importance: "high",
+        bgImage: '/images/opt.jpg',
         description: () => (
             <>
                 <div className="optimization">
