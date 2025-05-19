@@ -25,7 +25,7 @@ const SideMenu = () => {
       )}
       {isOpen && (
         <div className="side-menu">
-          <button className="close-menu" onClick={() => setIsOpen(false)}>X</button>
+          <button className="close-menu" onClick={() => setIsOpen(false)}>x</button>
           <div style={{ height: '40px' }}></div>
           <a href="#home" onClick={() => handleMenuItemClick('#home')}>Home</a>
           <a href="#main" onClick={() => handleMenuItemClick('#main')}>Projects</a>

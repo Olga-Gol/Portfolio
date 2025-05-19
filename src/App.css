@@ -52,7 +52,7 @@ section {
 
 .navigation a:hover,
 .side-menu a:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   color: #ffffff;
   border-radius: 10px;
 }
