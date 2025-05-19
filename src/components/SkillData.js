@@ -51,10 +51,10 @@ const skillData = [
     },
     {
         id: 3,
-        name: "Python",
+        name: "",
         category: "Programming Languages",
         importance: "high",
-        imgSrc: "/skills/python.jpg",
+        bgImage: '/images/python.png',
         description: () => (
             <>
                 <p>
@@ -142,7 +142,7 @@ const skillData = [
         name: "React",
         category: "Frameworks & Libraries",
         importance: "high",
-        bgImage: '/images/react.png',
+        bgImage: '/images/react.jpg',
         description: () => (
             <>
                 <div className="portfolio">
@@ -189,10 +189,10 @@ const skillData = [
 
     {
         id: 7,
-        name: "Next.js",
+        name: "",
         category: "Frameworks & Libraries",
         importance: "medium",
-        imgSrc: "/skills/nextjs.jpg",
+        bgImage: '/images/next.jpg',
         description: () => (
             <>
                 <p>
@@ -208,10 +208,10 @@ const skillData = [
     },
     {
         id: 8,
-        name: "Node.js",
+        name: "",
         category: "Frameworks & Libraries",
         importance: "medium",
-        imgSrc: "/skills/nodejs.jpg",
+        bgImage: '/images/node.png',
         description: () => (
             <>
                 <p>
@@ -318,10 +318,37 @@ const skillData = [
             </>
         ),
     },
+    {
+        id: 12,
+        name: "",
+        category: "Frameworks & Libraries",
+        importance: "medium",
+        bgImage: '/images/spring.png',
+        description: () => (
+            <>
+                <div className="tensorflow">
+                    <p>
+                       Spring boot
+                    </p>
+                    <p>
+                        
+                    </p>
+                    <a
+                        href="https://github.com/Olga-Gol/PhishingWebsitesML/blob/main/ML%20models/NeuralNetwork.ipynb"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ fontWeight: 'bold' }}
+                    >
+                        View project on GitHub
+                    </a>
+                </div>
+            </>
+        ),
+    },
 
     // Technical Fields
     {
-        id: 12,
+        id: 13,
         name: "Computational Geometry",
         category: "Technical Fields",
         importance: "high",
@@ -367,7 +394,7 @@ const skillData = [
         ),
     },
     {
-        id: 13,
+        id: 14,
         name: "Machine Learning",
         category: "Technical Fields",
         importance: "high",
@@ -389,7 +416,7 @@ const skillData = [
         ),
     },
     {
-        id: 14,
+        id: 15,
         name: "Optimization",
         category: "Technical Fields",
         importance: "high",
@@ -432,7 +459,7 @@ const skillData = [
         ),
     },
     {
-        id: 15,
+        id: 16,
         name: "Algorithms",
         category: "Technical Fields",
         importance: "high",
@@ -453,7 +480,7 @@ const skillData = [
 
     // Additional Skills
     {
-        id: 16,
+        id: 17,
         name: "Publications",
         category: "Additional Skills",
         importance: "medium",
@@ -513,7 +540,7 @@ const skillData = [
         ),
     },
     {
-        id: 17,
+        id: 18,
         name: "Web Development",
         category: "Additional Skills",
         importance: "medium",
@@ -533,7 +560,7 @@ const skillData = [
         ),
     },
     {
-        id: 18,
+        id: 19,
         name: "Mobile Development",
         category: "Additional Skills",
         importance: "small",
@@ -552,7 +579,7 @@ const skillData = [
         ),
     },
     {
-        id: 19,
+        id: 20,
         name: "Data Analysis",
         category: "Additional Skills",
         importance: "medium",
