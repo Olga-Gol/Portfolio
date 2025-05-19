@@ -134,7 +134,7 @@ const projectData = [
                     </div>
                     <div className="portfolio-text">
                         <p>
-                            Expertise in building modern web apps using React, with a strong focus on component structure, hooks,
+                            I build modern web apps using React, with a strong focus on component structure, hooks,
                             context, and managing state effectively.
                         </p>
                         <p>
@@ -578,7 +578,7 @@ const projectData = [
         description: () => (
             <>
                 <p>
-                    Advanced knowledge of algorithmic design, analysis, and implementation. Expertise in data
+                    Advanced knowledge of algorithmic design, analysis, and implementation, as well as data
                     structures, complexity analysis, and algorithm optimization.
                 </p>
                 <p>

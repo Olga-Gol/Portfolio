@@ -51,6 +51,7 @@ const Skills = () => (
   <div id="skills" className="skills-container">
     <h2 className="skills-header">SKILLS</h2>
     <div className="skills-categories">
+
       <div className="skill-category coding">
         <h3>Coding</h3>
         {skillCategories.Coding.map((skill) => (
@@ -60,7 +61,29 @@ const Skills = () => (
           </div>
         ))}
       </div>
-      <div className="right-column"> {/* Wrapper for Languages and Tools */}
+
+      <div className="skill-category tools">
+        <h3>Tools</h3>
+        {skillCategories.Tools.map((skill) => (
+          <div key={skill.name} className="skill-item">
+            <span>{skill.name}</span>
+            <div className="stars">{renderStars(skill.level)}</div>
+          </div>
+        ))}
+      </div>
+      
+      <div className="skill-category extra">
+
+        <div className="additional">
+          <h3>Additional</h3>
+          {skillCategories.Additional.map((skill) => (
+            <div key={skill.name} className="skill-item">
+              <span>{skill.name}</span>
+              <div className="stars">{renderStars(skill.level)}</div>
+            </div>
+          ))}
+        </div>
+
         <div className="skill-category languages">
           <h3>Languages</h3>
           {skillCategories.Languages.map((skill) => (
@@ -70,15 +93,7 @@ const Skills = () => (
             </div>
           ))}
         </div>
-        <div className="skill-category tools">
-          <h3>Tools</h3>
-          {skillCategories.Tools.map((skill) => (
-            <div key={skill.name} className="skill-item">
-              <span>{skill.name}</span>
-              <div className="stars">{renderStars(skill.level)}</div>
-            </div>
-          ))}
-        </div>
+
       </div>
     </div>
   </div>

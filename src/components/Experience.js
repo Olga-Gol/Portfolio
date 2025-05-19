@@ -15,7 +15,7 @@ const Experience = () => (
         <div className="job-description">
           <div className="job-title">Computer Science Teaching Assistant</div>
           <div className="employer-name">Mount Holyoke College, South Hadley, MA</div>
-          <div className="job-detail">I conducted one-on-one mentoring sessions for students in an <strong>Algorithms course </strong>,
+          <div className="job-detail">I conducted one-on-one mentoring sessions for students in an <strong>Algorithms course, </strong>
             helping them understand fundamental algorithms such as <strong>Dijkstra's, BFS, DFS, Kruskal's, and Prim's </strong>
             algorithms. I also guided students in analyzing algorithmic complexity and optimizing their code for time and space
             efficiency.
@@ -32,7 +32,7 @@ const Experience = () => (
           <div className="job-title">Mathematics Teaching Assistant</div>
           <div className="employer-name">Mount Holyoke College, South Hadley, MA</div>
           <div className="job-detail">I provided tutoring sessions for small groups of students enrolled in a
-            <strong>linear algebra</strong> course, assisted the course instructor by grading assignments and providing feedback
+            <strong> linear algebra</strong> course, assisted the course instructor by grading assignments and providing feedback
             to students, and established communication between the instructor and students.
           </div>
         </div>
@@ -83,7 +83,7 @@ const Experience = () => (
           <div className="employer-name">Pension Fund of the Russian Federation, Ufa</div>
           <div className="job-detail">I maintained and monitored <strong>SQL databases</strong> for pension records, performing
             regular validation checks to ensure data integrity. I collaborated with Senior Software Engineers on
-            <strong>Python scripting</strong> for large-scale data migration and cleaning projects. I also contributed to team
+            <strong> Python scripting</strong> for large-scale data migration and cleaning projects. I also contributed to team
             documentation efforts and followed <strong>version control</strong> protocols to maintain codebase quality.
           </div>
         </div>

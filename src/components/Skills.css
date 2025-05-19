@@ -11,43 +11,42 @@
   margin-bottom: 20px;
   font-family: 'Playfair Display', serif;
 }
+
 .skills-categories {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns */
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 30px;
+  justify-items: start;
+  padding: 20px;
 }
+
 .skill-category {
   display: flex;
   flex-direction: column;
 }
+
 .skill-category h3 {
   font-family: 'Playfair Display', serif;
-}
-
-.right-column {
-  display: flex;
-  flex-direction: column;
-  gap: -10px; /* Control vertical spacing between Languages and Tools */
 }
 
 .skill-item {
   display: flex;
   align-items: center;
-  justify-content: center;
   text-align: left; 
-  gap: 15px; /* Space between skill name and stars */
+  gap: 15px; 
   font-family: 'Nunito', sans-serif;
   margin-bottom: 10px; 
 }
 
 .stars {
   display: flex;
-  gap: 2px; /* Space between stars */
+  gap: 2px;
 }
 
 .star {
-  color: #ccc; /* Default non-colored star */
+  color: #ccc;
 }
 
 .star.filled {
-  color: #2B2B2B; /* Colored star */
+  color: #2B2B2B; 
 }
