@@ -238,7 +238,7 @@ const skillData = [
         name: "PyTorch",
         showNameOnButton: false,
         category: "Frameworks & Libraries",
-        importance: "medium",
+        importance: "small",
         bgImage: '/images/pytorch.png',
         description: () => (
             <>
@@ -331,7 +331,7 @@ const skillData = [
     },
     {
         id: 12,
-        name: "Spring Boot",
+        name: "Spring",
         showNameOnButton: false,
         category: "Frameworks & Libraries",
         importance: "small",
@@ -340,7 +340,7 @@ const skillData = [
             <>
                 <div className="tensorflow">
                     <p>
-                       Spring boot
+                       Spring
                     </p>
                     <p>
                         
