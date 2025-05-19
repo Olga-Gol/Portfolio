@@ -13,13 +13,9 @@ section {
   right: 20px;
   background: none;
   border: none;
-  font-size: 24px;
+  font-size: 1.2rem;
   cursor: pointer;
   z-index: 10;
-}
-
-.main-content {
-  /*margin-top: 40px;*/
 }
 
 .side-menu {
@@ -56,7 +52,7 @@ section {
 
 .navigation a:hover,
 .side-menu a:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.2);
   color: #ffffff;
   border-radius: 10px;
 }
@@ -74,7 +70,6 @@ section {
   font-size: 1.2rem;
   cursor: pointer;
   z-index: 10;
-  position: absolute;
 }
 
 @media (max-width: 768px) {
