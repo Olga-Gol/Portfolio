@@ -58,31 +58,45 @@
 }
 
 .skill-button-large {
-    padding: 30px 40px;
-    font-size: 1.8rem;
     /*background-color: #e0f2fe;*/
-    z-index: 3;
-    width: 270px;
-    height: 160px;
-    padding: 10px;
+    /*z-index: 3;*/
+    max-width: 270px;
+    aspect-ratio: 1.66667 / 1;
+    font-size: clamp(1.2rem, 1.5vw, 1.8rem);
+    padding: clamp(1rem, 1.5vw, 2rem);
 }
 
 .skill-button-medium {
-    padding: 25px 35px;
-    font-size: 1.6rem;
     /*background-color: #f0f9ff;*/
-    z-index: 2;
-    width: 250px;
-    height: 150px;
+    /*z-index: 2;*/
+    max-width: 225px;
+    aspect-ratio: 1.66667 / 1;
+    font-size: clamp(1rem, 1.2vw, 1.5rem);
+    padding: clamp(0.75rem, 1.2vw, 1.25rem);
 }
 
 .skill-button-small {
-    padding: 20px 30px;
-    font-size: 1rem;
     /*background-color: #f8fafc;*/
-    z-index: 1;
-    width: 220px;
-    height: 130px;
+    /*z-index: 1;*/
+    max-width: 180px;
+    aspect-ratio: 1.66667 / 1;
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
+    padding: clamp(0.5rem, 1vw, 1rem);
+}
+
+.skill-button-small,
+.skill-button-medium,
+.skill-button-large {
+    width: 100%;
+    height: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    border-radius: 12px;
+    background: #ddd;
+    transition: transform 0.3s ease;
 }
 
 .skill-modal {
@@ -384,7 +398,8 @@
 }
 
 .project-image {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -497,6 +512,43 @@
 }
 
 /* Responsive adjustments */
+@media (max-width: 1024px) {
+    .main-container {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .skill-button-large,
+    .skill-button-medium,
+    .skill-button-small {
+        max-width: 100%;
+    }
+
+    .skill-body {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skill-details {
+        padding: 20px;
+    }
+
+    .portfolio,
+    .optimization,
+    .matlab {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-image-container,
+    .project-image-container,
+    .matlab-project-image-container {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .skill-content {
         flex-direction: column;
@@ -506,14 +558,54 @@
         flex-direction: column;
     }
 
-    .skill-body {
+    .skill-body,
+    .portfolio,
+    .optimization {
         flex-direction: column;
+        gap: 20px;
+    }
+
+    .rotating-video {
+        max-width: 500px;
+    }
+
+    .project-image-container,
+    .portfolio-image-container {
+        width: 100%;
+    }
+
+    .project-image,
+    .portfolio-image,
+    .publication-image,
+    .rotating-video {
+        width: 100%;
+        height: auto;
+    }
+
+    .skill-button-large,
+    .skill-button-medium,
+    .skill-button-small {
+        max-width: 100%;
     }
 
     .skill-image-container {
         flex: 1;
         max-height: 200px;
         overflow: hidden;
+    }
+
+    .skill-button {
+        font-size: 1rem;
+    }
+
+    .skill-details h3 {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-text,
+    .optimization-text,
+    .matlab-text {
+        font-size: 0.95rem;
     }
 
     .skill-button-large {
@@ -534,5 +626,31 @@
     .skills-cloud {
         max-width: 100%;
         padding: 0 10px;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .main-container {
+        padding: 20px;
+    }
+
+    .skill-button {
+        padding: 15px;
+    }
+
+    .skill-details {
+        padding: 15px;
+    }
+
+    .close-button {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .skills-cloud {
+        flex-direction: column;
+        align-items: stretch;
     }
 }
