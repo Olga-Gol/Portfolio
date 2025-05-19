@@ -23,6 +23,7 @@ const Experience = () => (
           that enables manipulation and visualization of Funk, reverse Funk, and Thompson balls in convex polygonal domains.
         </div>
       </div>
+      </div>
 
       <div className="timeline-item">
         <div className="time-period">January 2024 - Present</div>
@@ -86,7 +87,6 @@ const Experience = () => (
         </div>
       </div>
     </div>
-  </div>
   </div>
 );
 

@@ -62,6 +62,53 @@ const projectData = [
     },
     {
         id: 4,
+        name: "MATLAB",
+        showNameOnButton: true,
+        category: "Programming Languages",
+        importance: "medium",
+        bgImage: '/images/matlab.png',
+        description: () => (
+            <>
+                <div className="matlab">
+                    <div className="matlab-project-image-container">
+                        <a
+                            href="/papers/Runge_Kutta_Method.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+
+                            <img
+                                src="/papers/rungekutta.jpg"
+                                alt="Runge-Kutta Method"
+                                className="matlab-project-image"
+                            />
+                            <div className="matlab-image-overlay">Runge-Kutta Method</div>
+                        </a>
+                    </div>
+                    <div className="matlab-text">
+                        <p>
+                            Extensive experience with MATLAB, particularly in the context of linear algebra and ordinary differential equations (ODEs).
+                            Familiar with solving large systems of linear equations, performing LU and QR decompositions, computing eigenvalues and eigenvectors,
+                            and analyzing the stability of matrices. In ODEs, experience includes both analytical and numerical approaches,
+                            such as implementing Euler’s method, Runge-Kutta methods, and phase plane analysis.
+                        </p>
+                        <p>
+                            Additionally skilled in using MATLAB for data visualization, simulation of mathematical models, and algorithm prototyping
+                            for mathematical analysis and engineering problems.
+                        </p>
+                        <p>
+                            <strong>Selected project:</strong> Authored a report providing an overview of the classical fourth-order Runge-Kutta method
+                            for solving initial value problems in ODEs. Implemented the method in MATLAB, validated the results with known
+                            analytical solutions, and visualized error behavior across varying step sizes. The project emphasized both
+                            theoretical foundations and practical implementation.
+                        </p>
+                    </div>
+                </div>
+            </>
+        ),
+    },
+    {
+        id: 5,
         name: "React",
         showNameOnButton: true,
         category: "Frameworks & Libraries",
@@ -110,53 +157,6 @@ const projectData = [
             </>
         ),
     }, 
-    {
-        id: 5,
-        name: "MATLAB",
-        showNameOnButton: true,
-        category: "Programming Languages",
-        importance: "medium",
-        bgImage: '/images/matlab.png',
-        description: () => (
-            <>
-                <div className="matlab">
-                    <div className="matlab-project-image-container">
-                        <a
-                            href="/papers/Runge_Kutta_Method.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-
-                            <img
-                                src="/papers/rungekutta.jpg"
-                                alt="Runge-Kutta Method"
-                                className="matlab-project-image"
-                            />
-                            <div className="matlab-image-overlay">Runge-Kutta Method</div>
-                        </a>
-                    </div>
-                    <div className="matlab-text">
-                        <p>
-                            Extensive experience with MATLAB, particularly in the context of linear algebra and ordinary differential equations (ODEs).
-                            Familiar with solving large systems of linear equations, performing LU and QR decompositions, computing eigenvalues and eigenvectors,
-                            and analyzing the stability of matrices. In ODEs, experience includes both analytical and numerical approaches,
-                            such as implementing Euler’s method, Runge-Kutta methods, and phase plane analysis.
-                        </p>
-                        <p>
-                            Additionally skilled in using MATLAB for data visualization, simulation of mathematical models, and algorithm prototyping
-                            for mathematical analysis and engineering problems.
-                        </p>
-                        <p>
-                            <strong>Selected project:</strong> Authored a report providing an overview of the classical fourth-order Runge-Kutta method
-                            for solving initial value problems in ODEs. Implemented the method in MATLAB, validated the results with known
-                            analytical solutions, and visualized error behavior across varying step sizes. The project emphasized both
-                            theoretical foundations and practical implementation.
-                        </p>
-                    </div>
-                </div>
-            </>
-        ),
-    },
     {
         id: 6,
         name: "React Native/Expo",

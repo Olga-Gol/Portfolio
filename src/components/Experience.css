@@ -4,11 +4,11 @@
   }
 
   .experience-header {
-    display: inline-block; /* To enable applying padding and border-radius */
+    display: inline-block; 
     padding: 5px 10px;
-    border-radius: 20px; /* Rounded corners for the box */
-    background-color: #C5AECF; /* Background color for the header */
-    margin-bottom: 20px; /* Space below the header */
+    border-radius: 10px; 
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
     font-family: 'Playfair Display', serif;
   }
   
@@ -16,23 +16,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%; /* Adjust the width as needed */
-    max-width: 800px; /* Maximum width of the container */
-    margin: auto; /* Center the container on the page */
-    padding: 20px; /* Add some padding inside the container */
-    background-color: #fff; /* Optional: Background color for the container */
+    width: 80%;
+    max-width: 500px; 
+    margin: auto;
+    padding: 20px; 
+    background-color: #fff; 
   }
   
   .timeline-item {
     display: flex;
-    align-items: center; /* Align items vertically */
-    justify-content: flex-start;/* Align items horizontally to the left */
+    align-items: center; 
+    justify-content: flex-start;
     margin: 20px 0;
   }
   
   .time-period {
-    flex-shrink: 0; /* Prevents the time period from shrinking */
-    width: 100px; /* Adjust width as needed */
+    flex-shrink: 0;
+    width: 100px; 
     text-align: right;  
     margin-right: 15px;
     font-family: 'Nunito', sans-serif;
@@ -41,14 +41,14 @@
 
   .time-period,
   .timeline-divider {
-    flex: none; /* Do not stretch */
+    flex: none;
   }
   
   .timeline-divider {
     width: 1px;
-    height: 100px; /* Fixed height */
+    height: 100px;
     background-color: #333;
-    margin: 0 20px; /* Fixed margin to keep the divider in place */
+    margin: 0 20px; 
   }
   
   .timeline-circle {
@@ -56,46 +56,45 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 15px; /* Adjust size as needed */
+    width: 15px;
     height: 15px;
     background-color: #333;
     border-radius: 50%;
   }
   .job-title {
     font-weight: bold;
-    margin-bottom: 5px; /* Reduced space between job title and employer name */
+    margin-bottom: 5px; 
     font-family: 'Playfair Display', serif;
     font-size: 1.2em;
   }
 
   .employer-name {
-    color: #aaa; /* Paler grey for the employer name */
+    color: #aaa;
     font-family: 'Nunito', sans-serif;
     font-size: 0.9em;
   }
 
   .job-description {
-    margin-left: 20px; /* Space after the divider */
+    margin-left: 20px; 
     text-align: left;
-    color: #333; /* Standard text color for the description */
-    font-size: 0.9em; /* Smaller font size for the description */
-    margin-top: 5px; /* Space between employer name and description */
-    flex-grow: 1; /* Allow the job description to take up remaining space */
+    color: #333;
+    font-size: 0.9em; 
+    margin-top: 5px;
+    flex-grow: 1; 
     
   }
 
   .job-detail {
     text-align: left;
-    color: #333; /* Standard text color for the description */
-    font-size: 0.95em; /* Smaller font size for the description */
-    margin-top: 10px; /* Space between employer name and description */
+    color: #333; 
+    font-size: 0.95em;
+    margin-top: 10px;
     font-family: 'Nunito', sans-serif;
     
     
-    flex-grow: 1; /* Allow the job description to take up remaining space */
+    flex-grow: 1; 
   }
   
-  /* Add media queries for responsiveness if necessary */
   @media (max-width: 768px) {
     .timeline-item {
       flex-direction: column;
