@@ -6,8 +6,8 @@
 .skills-header {
   display: inline-block;
   padding: 5px 10px;
-  border-radius: 20px;
-  background-color: #C5AECF;
+  border-radius: 10px; 
+  background-color: #f5f5f5;
   margin-bottom: 20px;
   font-family: 'Playfair Display', serif;
 }

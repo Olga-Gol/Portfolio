@@ -1,31 +1,44 @@
 import React from 'react';
 import './Skills.css';
 
-const skillCategories  = {
+const skillCategories = {
   Coding: [
-  { name: 'React', level: 5 },
-  { name: 'JavaScript', level: 4 },
-  { name: 'Java', level: 5 },
-  { name: 'CSS', level: 4 },
-  { name: 'Python', level: 5 },
-  { name: 'HTML', level: 4 },
-  { name: 'C', level: 4 },
-  { name: 'C#', level: 2 },
-  { name: 'TypeScript', level: 3 },
-  { name: 'R', level: 3 },
-],
-Languages: [
-  { name: 'Russian', level: 5 },
-    { name: 'English', level: 5 },
-    { name: 'German', level: 4 },
+    { name: 'JavaScript', level: 4 },
+    { name: 'Java', level: 4 },
+    { name: 'HTML', level: 4 },
+    { name: 'CSS', level: 3 },
+    { name: 'TypeScript', level: 3 },
+    { name: 'Python', level: 3 },
+    { name: 'MATLAB', level: 3 },
+    { name: 'C++', level: 2 },
+    { name: 'SQL', level: 2 },
   ],
   Tools: [
-    { name: 'Expo', level: 5 },
+    { name: 'React', level: 4 },
+    { name: 'React Native', level: 3 },
+    { name: 'Spring Boot', level: 3 },
+    { name: 'Expo', level: 3 },
+    { name: 'TensorFlow', level: 3 },
+    { name: 'PyTorch', level: 3 },
     { name: 'Node.js', level: 3 },
+    { name: 'Next.js', level: 2 },
+    { name: 'Git', level: 3 },
     { name: 'MongoDB', level: 2 },
-    { name: 'Unity', level: 2 },
-    { name: 'MATLAB', level: 4 },
   ],
+  Additional: [
+    { name: 'Machine Learning', level: 3 },
+    { name: 'Neural Networks', level: 3 },
+    { name: 'Linear Programming', level: 3 },
+    { name: 'Optimization Methods', level: 3 },
+    { name: 'Data Visualization', level: 2 },
+    { name: 'Algorithm Design', level: 2 },
+  ],
+  Languages: [
+    { name: 'Russian', level: 5 },
+    { name: 'English', level: 5 },
+    { name: 'German', level: 3 },
+  ],
+
 };
 
 const renderStars = (level) => (
@@ -38,7 +51,7 @@ const Skills = () => (
   <div id="skills" className="skills-container">
     <h2 className="skills-header">SKILLS</h2>
     <div className="skills-categories">
-      <div className="skill-category coding"> 
+      <div className="skill-category coding">
         <h3>Coding</h3>
         {skillCategories.Coding.map((skill) => (
           <div key={skill.name} className="skill-item">
