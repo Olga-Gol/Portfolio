@@ -71,7 +71,7 @@
     font-size: 1.6rem;
     /*background-color: #f0f9ff;*/
     z-index: 2;
-    max-width: 230px;
+    min-width: 230px;
     min-height: 150px;
 }
 

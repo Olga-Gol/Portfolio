@@ -435,7 +435,7 @@ const skillData = [
         showNameOnButton: true,
         category: "Technical Fields",
         importance: "high",
-        bgImage: '/images/opt.jpg',
+        bgImage: '/images/opt.png',
         description: () => (
             <>
                 <div className="optimization">
