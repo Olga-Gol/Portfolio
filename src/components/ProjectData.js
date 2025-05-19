@@ -44,7 +44,7 @@ const projectData = [
         name: "Java",
         showNameOnButton: false,
         category: "Programming Languages",
-        importance: "high",
+        importance: "medium",
         bgImage: '/images/java.png',
         description: () => (
             <>
