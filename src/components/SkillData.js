@@ -143,36 +143,48 @@ const skillData = [
         importance: "high",
         description: () => (
             <>
-                <p>
-                    Expertise in building modern web apps using React, with a strong focus on component structure, hooks, 
-                    context, and managing state effectively.
-                </p>
-                <p>
-                    Developed responsive, interactive interfaces that prioritize reusable components and smooth, efficient rendering.
-                </p>
-                <p>
-                    <strong>Selected project:</strong> This portfolio website, fully built in React with a custom design 
-                    system and responsive layout written in plain CSS.
-                </p>
-                <div className="portfolio-preview-container">
-                    <a
-                        href="https://olgagol.vercel.app/" 
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="portfolio-preview-link"
-                    >
-                        <img
-                            src="/projects/portfolio-preview.png"
-                            alt="Portfolio Website Preview"
-                            className="portfolio-preview-image"
-                        />
-                        <div className="portfolio-preview-overlay">This portfolio is built with React - view main page</div>
-                    </a>
+                <div className="portfolio">
+                    <div className="portfolio-image-container">
+                        <a
+                            href="https://olgagol.vercel.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="portfolio-image-link "
+                        >
+                            <img
+                                src="/projects/portfolio-preview.png"
+                                alt="Portfolio Website Preview"
+                                className="portfolio-image"
+                            />
+                            <div className="portfolio-image-overlay">This portfolio is built with React - view main page</div>
+                        </a>
+                    </div>
+                    <div className="portfolio-text">
+                        <p>
+                            Expertise in building modern web apps using React, with a strong focus on component structure, hooks,
+                            context, and managing state effectively.
+                        </p>
+                        <p>
+                            Developed responsive, interactive interfaces that prioritize reusable components and smooth, efficient rendering.
+                        </p>
+                        <p>
+                            <strong>Selected project:</strong> This portfolio website, fully built in React with a custom design
+                            system and responsive layout written in plain CSS.
+                            <a
+                                href="https://github.com/Olga-Gol/Portfolio"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                style={{ fontWeight: 'bold' }}
+                            >
+                                View project on GitHub
+                            </a>
+                        </p>
+                    </div>
                 </div>
             </>
         ),
     },
-    
+
     {
         id: 7,
         name: "Next.js",
