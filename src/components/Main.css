@@ -84,21 +84,6 @@
     padding: clamp(0.5rem, 1vw, 1rem);
 }
 
-.skill-button-small,
-.skill-button-medium,
-.skill-button-large {
-    width: 100%;
-    height: auto; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: none;
-    border-radius: 12px;
-    background: #ddd;
-    transition: transform 0.3s ease;
-}
-
 .skill-modal {
     position: fixed;
     top: 0;
