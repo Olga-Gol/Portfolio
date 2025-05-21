@@ -10,13 +10,31 @@
 }
 
 .main-header {
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 10px; 
-    background-color: #f5f5f5;
-    margin-bottom: 30px;
-    font-family: 'Playfair Display', serif;
-  }
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  font-size: 1.8rem; 
+  color: #2c3e50; 
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+}
+
+.main-header::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 70px;
+  height: 3px;
+  background: #4a6da7; 
+  border-radius: 3px;
+  transition: width 0.3s ease 0.1s;
+}
+
+.main-header:hover::after {
+  width: 100%;
+  transition: width 0.3s ease;
+}
 
 .skills-cloud {
     display: flex;
@@ -24,7 +42,7 @@
     gap: 15px;
     justify-content: center;
     align-items: center;
-    max-width: 2000px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -69,34 +87,10 @@
 
 .skill-button-large {
     width: 100%;
-    max-width: 265px;
-    height: 159px;
+    max-width: 235px;
+    height: 141px;
     font-size: clamp(1.4rem, 1.8vw, 2.2rem);
     padding: clamp(1rem, 1.5vw, 2rem);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.skill-button-medium {
-    width: 100%;
-    max-width: 220px;
-    height: 132px;
-    font-size: clamp(1.2rem, 1.5vw, 1.8rem);
-    padding: clamp(0.75rem, 1.2vw, 1.25rem);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.skill-button-small {
-    width: 100%;
-    max-width: 180px;
-    height: 108px;
-    font-size: clamp(1rem, 1.2vw, 1.5rem);
-    padding: clamp(0.5rem, 1vw, 1rem);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -199,15 +193,8 @@
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    font-size: 1.4rem;
+    font-size: 1rem;
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    line-height: 1;
-    z-index: 10;
 }
 
 .link-button {
@@ -244,7 +231,76 @@
 }
 
 /*TensorFlow*/
+.tensorflow-image-container {
+    position: relative;
+    display: inline-block;
+    width: 350px;
+}
+
+.tensorflow-image-link {
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tensorflow-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tensorflow-image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.1em;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 12px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.tensorflow-image-container:hover .tensorflow-image {
+    filter: brightness(60%);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+    cursor: pointer;
+}
+
+.tensorflow-image-container:hover .tensorflow-image-overlay {
+    opacity: 1;
+}
+
 .tensorflow {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.tensorflow-text {
+    flex: 1;
+    font-size: 1em;
+    color: #444;
+}
+
+.tensorflow-text p {
+    margin: 0 0 10px 0;
+    line-height: 1.6;
+}
+
+/*Spring Boot*/
+.spring {
+    display: flex;
+    align-items: flex-start;
     gap: 20px;
 }
 
@@ -515,6 +571,72 @@
 }
 
 .matlab-project-image-container:hover .matlab-image-overlay {
+    opacity: 1;
+}
+
+/* Data Analysis */
+.data-analysis {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.data-analysis-text {
+    flex: 1;
+    font-size: 1em;
+    color: #444;
+}
+
+.data-analysis-text p {
+    margin: 0 0 10px 0;
+    line-height: 1.6;
+}
+
+.data-analysis-image-container {
+    position: relative;
+    display: inline-block;
+    width: 350px;
+}
+
+.data-analysis-image-link {
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.data-analysis-image {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.data-analysis-image-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.1em;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 12px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.data-analysis-image-container:hover .data-analysis-image {
+    filter: brightness(60%);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+    cursor: pointer;
+}
+
+.data-analysis-image-container:hover .data-analysis-image-overlay {
     opacity: 1;
 }
 
