@@ -4,6 +4,8 @@ import Main from './components/Main';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
 import LoadingScreen from './components/LoadingScreen';
+import Footer from './components/Footer'; 
+import './cursor.js';
 import './App.css';
 
 const SideMenu = () => {
@@ -51,6 +53,7 @@ function App() {
           <section id="main"><Main /></section>
           <section id="experience"><Experience /></section>
           <section id="skills"><Skills /></section>
+          <Footer />
         </>
       )}
     </div>

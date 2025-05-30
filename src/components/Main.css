@@ -157,9 +157,12 @@
     gap: 20px;
 }
 
+/*Related projects*/
 .related-projects {
     margin-top: 20px;
     font-family: 'Nunito', sans-serif;
+    font-size: 0.95rem;
+   
 }
 
 .related-projects h4 {
@@ -464,6 +467,7 @@
     pointer-events: none;
     text-align: center;
     white-space: nowrap;
+    text-wrap: wrap;
 }
 
 .portfolio-image-container:hover .portfolio-image {
@@ -675,6 +679,7 @@
     pointer-events: none;
     text-align: center;
     white-space: nowrap;
+    text-wrap: wrap;
 }
 
 .data-analysis-image-container:hover .data-analysis-image {
