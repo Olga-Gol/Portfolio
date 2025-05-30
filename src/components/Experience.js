@@ -13,8 +13,16 @@ const Experience = () => (
           <div className="timeline-circle"></div>
         </div>
         <div className="job-description">
-          <div className="job-title">Computer Science Teaching Assistant</div>
-          <div className="employer-name">Mount Holyoke College, South Hadley, MA</div>
+
+          <div className="job-title-container">
+            <img src="/images/mhc-logo.png" alt="Mount Holyoke College" className="employer-logo" />
+
+            <div>
+              <div className="job-title">Computer Science Teaching Assistant</div>
+              <div className="employer-name">Mount Holyoke College, South Hadley, MA</div>
+            </div>
+          </div>
+
           <div className="job-detail">I conducted one-on-one mentoring sessions for students in an <strong>Algorithms course, </strong>
             helping them understand fundamental algorithms such as <strong>Dijkstra's, BFS, DFS, Kruskal's, and Prim's </strong>
             algorithms. I also guided students in analyzing algorithmic complexity and optimizing their code for time and space
@@ -29,8 +37,14 @@ const Experience = () => (
           <div className="timeline-circle"></div>
         </div>
         <div className="job-description">
-          <div className="job-title">Mathematics Teaching Assistant</div>
-          <div className="employer-name">Mount Holyoke College, South Hadley, MA</div>
+          <div className="job-title-container">
+            <img src="/images/mhc-logo.png" alt="Mount Holyoke College" className="employer-logo" />
+            <div>
+
+              <div className="job-title">Mathematics Teaching Assistant</div>
+              <div className="employer-name">Mount Holyoke College, South Hadley, MA</div>
+            </div>
+          </div>
           <div className="job-detail">I provided tutoring sessions for small groups of students enrolled in a
             <strong> linear algebra</strong> course, assisted the course instructor by grading assignments and providing feedback
             to students, and established communication between the instructor and students.
@@ -44,8 +58,14 @@ const Experience = () => (
           <div className="timeline-circle"></div>
         </div>
         <div className="job-description">
-          <div className="job-title">Undergraduate Research Assistant</div>
-          <div className="employer-name">University of Maryland, College Park, MD </div>
+
+          <div className="job-title-container">
+            <img src="/images/umd-logo.png" alt="University of Maryland" className="employer-logo" />
+            <div>
+              <div className="job-title">Undergraduate Research Assistant</div>
+              <div className="employer-name">University of Maryland, College Park, MD </div>
+            </div>
+          </div>
           <div className="job-detail">I investigated theoretical problems in <strong>computational geometry</strong> within the Hilbert metric space,
             focusing on minimum enclosing ball problems. I proved that minimum radius balls over metric spaces with the Heine-Borel
             property are LP-type problems, representing a significant theoretical contribution to the field. I developed explicit
@@ -56,14 +76,21 @@ const Experience = () => (
         </div>
       </div>
 
+
+
       <div className="timeline-item">
         <div className="time-period">May 2024 - August 2024</div>
         <div className="timeline-divider">
           <div className="timeline-circle"></div>
         </div>
         <div className="job-description">
-          <div className="job-title">Proposal Development Apprentice</div>
-          <div className="employer-name">L'Space Academy NASA Proposal Writing and Evaluation Experience, Remote</div>
+          <div className="job-title-container">
+            <img src="/images/nasa-logo.png" alt="NASA L'Space" className="employer-logo" />
+            <div>
+              <div className="job-title">Proposal Development Apprentice</div>
+              <div className="employer-name">L'Space Academy NASA Proposal Writing and Evaluation Experience, Remote</div>
+            </div>
+          </div>
           <div className="job-detail">I completed <strong>proposal development</strong> training through NASA's L'SPACE Academy
             under a NASA Chief Technologist. I wrote key sections of a competitive funding proposal with a cross-functional team,
             meeting NASA's technical requirements and deadlines. I <strong>chaired review panels</strong> evaluating competing
@@ -79,8 +106,13 @@ const Experience = () => (
           <div className="timeline-circle"></div>
         </div>
         <div className="job-description">
-          <div className="job-title">Software Development Intern</div>
-          <div className="employer-name">Pension Fund of the Russian Federation, Ufa</div>
+          <div className="job-title-container">
+            <img src="/images/pen-logo.png" alt="Pension Fund" className="employer-logo" />
+            <div>
+              <div className="job-title">Software Development Intern</div>
+              <div className="employer-name">Pension Fund of the Russian Federation, Ufa</div>
+            </div>
+          </div>
           <div className="job-detail">I maintained and monitored <strong>SQL databases</strong> for pension records, performing
             regular validation checks to ensure data integrity. I collaborated with Senior Software Engineers on
             <strong> Python scripting</strong> for large-scale data migration and cleaning projects. I also contributed to team
@@ -88,7 +120,6 @@ const Experience = () => (
           </div>
         </div>
       </div>
-
     </div>
   </div>
 );
