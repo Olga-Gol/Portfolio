@@ -8,14 +8,18 @@ const HomePage = () => (
 
     </div>
     <div className="introduction-section">
-      <h1>Hey, I'm <strong>Olga (Olya) Golovatskaia</strong></h1>
+      
+      <div className="cursor-section">
 
-      <p>I'm a recent Computer Science & Mathematics graduate from Mount Holyoke College, interested in
-        <strong> algorithms</strong>, <strong>machine learning</strong>, <strong>optimization</strong>, and <strong>computational geometry</strong>.
-        I enjoy working with languages like <strong>Java</strong>, <strong>JavaScript</strong>, and <strong>Python</strong>,
-        and building with <strong>React</strong>, <strong>Spring Boot</strong>, and <strong>TensorFlow</strong>.
-      </p>
-      <p> When I'm not coding, you'll find me reading a good book or making little games for friends. </p>
+        <h1>Hey, I'm <strong>Olga (Olya) Golovatskaia</strong></h1>
+
+        <p>I'm a recent Computer Science & Mathematics graduate from Mount Holyoke College, interested in
+          <strong> algorithms</strong>, <strong>machine learning</strong>, <strong>optimization</strong>, and <strong>computational geometry</strong>.
+          I enjoy working with languages like <strong>Java</strong>, <strong>JavaScript</strong>, and <strong>Python</strong>,
+          and building with <strong>React</strong>, <strong>Spring Boot</strong>, and <strong>TensorFlow</strong>.
+        </p>
+        <p> When I'm not coding, you'll find me reading a good book or making little games for friends. </p>
+      </div>
 
       <blockquote className="quote">All great deeds and all great thoughts have a ridiculous beginning.</blockquote>
       <p className="quote-author">- Albert Camus</p>
