@@ -131,8 +131,7 @@ const Main = () => {
                 })}
             </div>
 
-            {/* {activeSkill && ( */}
-            {activeSkill?.videos && (
+            {activeSkill && (
                 <div className="skill-modal" onClick={handleModalClick}>
                     <div className="skill-content">
 
@@ -146,16 +145,6 @@ const Main = () => {
                                             <img src={activeSkill.imgSrc} alt={activeSkill.name} />
                                         ) : (
                                             <div className={`video-rotation-container ${activeSkill.videoOrientation === 'vertical' ? 'vertical' : 'horizontal'}`}>
-                                                {/* {activeSkill.videos.map((videoSrc, index) => (
-                                                    <video
-                                                        key={index}
-                                                        src={videoSrc}
-                                                        autoPlay
-                                                        loop
-                                                        muted
-                                                        className="rotating-video"
-                                                    />
-                                                ))} */}
                                                 {activeSkill.videos.map((src, i) => (
                                                     <VideoPlayer key={i} src={src} />
                                                 ))}
