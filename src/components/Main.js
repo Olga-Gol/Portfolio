@@ -49,7 +49,7 @@ const VideoPlayer = ({ src }) => {
         };
 
         video.addEventListener('canplay', handleCanPlay);
-        video.load(); 
+        video.load();
 
         return () => {
             video.removeEventListener('canplay', handleCanPlay);
@@ -61,10 +61,10 @@ const VideoPlayer = ({ src }) => {
     return (
         <div className={`video-container ${isLoaded ? 'loaded' : 'loading'}`}>
             {!isLoaded && (
-            <div className="video-loader" aria-busy="true" aria-live="polite">
-                <div className="loading-spinner" aria-hidden="true"></div>
-                    <span className="loading-text">Loading video...</span>
-                     </div>
+                <div className="video-loader" aria-busy="true" aria-live="polite">
+                    <div className="loading-spinner" aria-hidden="true"></div>
+                    <span className="loading-text">Loading...</span>
+                </div>
             )}
             <video
                 ref={videoRef}
