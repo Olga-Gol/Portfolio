@@ -5,11 +5,11 @@ import projectData from './ProjectData';
 
 const useVideoPreloader = () => {
     const videoUrls = [
-        '/videos/hilbert1.mp4',
-        '/videos/hilbert2.mp4',
-        '/videos/hilbert3.mp4',
-        '/videos/minesweeper.mov',
-        '/videos/ShelterGameplay.mp4'
+        '/videos/hilbert1.webm',
+        '/videos/hilbert2.webm',
+        '/videos/hilbert3.webm',
+        '/videos/minesweeper.webm',
+        '/videos/ShelterGameplay.webm'
     ];
 
     useEffect(() => {
@@ -108,8 +108,9 @@ const Main = () => {
         <div id="main" className="main-container">
 
             <h2 className="main-header">PROJECTS</h2>
-
+<div className="cursor-section">
             <div className="skills-cloud">
+                
                 {projectData.map((skill) => {
                     // Determine button size based on importance level
                     const sizeClass = skill.importance === 'high'
@@ -129,6 +130,7 @@ const Main = () => {
                         </button>
                     );
                 })}
+                </div>
             </div>
 
             {activeSkill && (

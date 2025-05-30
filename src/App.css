@@ -15,7 +15,7 @@ html {
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: none; 
 }
 
@@ -23,10 +23,13 @@ body.cursor-active .cursor {
   display: block;
 }
 
+.cursor.cursor-clicked {
+    transform: translate(-50%, -50%) scale(0.7);
+}
+
 /* For cursor section */
 .cursor.section-hover-active {
   transform: translate(-50%, -50%) scale(4.5);
-  transition: transform 0.5s ease;
 }
 
 
