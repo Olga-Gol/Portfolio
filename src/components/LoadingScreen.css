@@ -1,0 +1,44 @@
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease-out;
+}
+
+.loading-content {
+  text-align: center;
+  color: #2c3e50;
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.progress-bar {
+  width: 300px;
+  height: 10px;
+  background: #988686;
+  border-radius: 5px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #4a6da7; 
+  transition: width 0.4s ease;
+}
+
+.progress-text {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 10;
+  color: #2c3e50;
+}
