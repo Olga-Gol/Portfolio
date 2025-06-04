@@ -107,10 +107,10 @@ const Main = () => {
     return (
         <div id="main" className="main-container">
 
-            <h2 className="main-header">PROJECTS</h2>
-<div className="cursor-section">
+            <h2 className="main-header">ПРОЕКТЫ</h2>
+            {/* <div className="cursor-section"> */}
+
             <div className="skills-cloud">
-                
                 {projectData.map((skill) => {
                     // Determine button size based on importance level
                     const sizeClass = skill.importance === 'high'
@@ -126,12 +126,14 @@ const Main = () => {
                             onClick={() => handleSkillClick(skill)}
                             style={skill.bgImage ? { backgroundImage: `url(${skill.bgImage})` } : {}}
                         >
-                            {skill.showNameOnButton && skill.name}
+                            <span className="skill-button-text">
+                                {skill.showNameOnButton && skill.name}
+                            </span>
                         </button>
                     );
                 })}
-                </div>
             </div>
+            {/* </div> */}
 
             {activeSkill && (
                 <div className="skill-modal" onClick={handleModalClick}>
@@ -183,8 +185,10 @@ const Main = () => {
                     </div>
                     <button className="close-button" onClick={() => setActiveSkill(null)}>X</button>
                 </div>
+
             )}
         </div>
+
     )
 };
 

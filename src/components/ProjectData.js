@@ -298,7 +298,7 @@ const projectData = [
             "/videos/hilbert2.webm",
             "/videos/hilbert3.webm"
         ],
-        bgImage: '/images/compgeo.gif',
+        bgImage: '/images/compgeo.png',
         description: () => (
             <div>
                 <p>
@@ -473,7 +473,7 @@ const projectData = [
         showNameOnButton: true,
         category: "Additional Skills",
         importance: "high",
-        bgImage: '/images/publications.jpg',
+        bgImage: '/images/publications.png',
         description: () => (
             <>
                 <div className="publications-grid">
@@ -565,7 +565,7 @@ const projectData = [
         showNameOnButton: true,
         category: "Technical Fields",
         importance: "high",
-        bgImage: '/images/ml.jpg',
+        bgImage: '/images/ml.png',
         description: () => (
             <>
                 <p>
@@ -611,7 +611,7 @@ const projectData = [
         showNameOnButton: true,
         category: "Technical Fields",
         importance: "high",
-        bgImage: '/images/algo.jpg',
+        bgImage: '/images/algo.png',
         description: () => (
             <>
                 <p>
